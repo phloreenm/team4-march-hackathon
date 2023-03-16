@@ -1,0 +1,10 @@
+/* DOM Manipulation Classes - for JavaScript */
+
+.selected,
+.selected:hover {
+    background-color: #ff0000;
+}
+
+.hidden {
+    display: none;
+}
