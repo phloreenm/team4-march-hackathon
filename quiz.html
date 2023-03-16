@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Women In Tech - Find Your Role Model</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <!-- Welcome -->
+    <div class="" id="welcome-div">
+        <h1 class="">WELCOME!</h1>
+        <p>Take our quiz to find your perfect Role Model</p>
+        <!-- Start Quiz Button -->
+        <button id="start-quiz-btn">Start Quiz</button>
+    </div>
+
+    <!-- Game -->
+    <div class="hidden" id="game-div">
+        <div class="" id="progress-div">
+            <p id="progress-text"></p>
+            <div class="progressbar" id="progressbar-fg"></div>
+            <div class="progressbar" id="progressbar-bg"></div>
+        </div>
+
+        <div class="" id="answer-div">
+            <h2 class="weight-500 body-font" id="question-text">Question Placeholder</h2>
+            <div id="answer-div">
+                <button class="btn-choice">Placeholder 1</button>
+                <button class="btn-choice">Placeholder 2</button>
+                <button class="btn-choice">Placeholder 3</button>
+                <button class="btn-choice">Placeholder 4</button>
+                <button class="btn-choice">Placeholder 5</button>
+                <button class="btn-choice">Placeholder 6</button>
+            </div>
+        </div>
+        <div class="hidden" id="answer-tie-div">
+            <h2 id="tie-break-title">Tie Breaker!</h2>
+            <p>We have a tie! Choose a photo that inspires you to see your results...</p>
+            <div class="" id="answer-tie-div">
+                <button class="btn-choice-tie hidden" id="tie-rm1" aria-label="" data-type="rmOne">Role
+                    Model 1 Tie Button</button>
+                <button class="btn-choice-tie hidden" id="tie-rm2" aria-label="" data-type="rmTwo">Role
+                    Model 2 Tie Button</button>
+                <button class="btn-choice-tie hidden" id="tie-rm3" aria-label="" data-type="rmThree">Role
+                    Model 3 Tie Button</button>
+                <button class="btn-choice-tie hidden" id="tie-rm4" aria-label="" data-type="rmFour">Role
+                    Model 4 Tie Button</button>
+                <button class="btn-choice-tie hidden" id="tie-rm5" aria-label="" data-type="rmFive">Role
+                    Model 5 Tie Button</button>
+                <button class="btn-choice-tie hidden" id="tie-rm6" aria-label="" data-type="rmSix">Role
+                    Model 6 Tie Button</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results -->
+    <div class="hidden" id="results-div">
+        <h1 id="results-heading">Your Role Model Is.... <span id="rolemodel-winner">Winning Rolemodel</span></h1>
+        <img src="" id="role-model-image" alt="">
+
+        <p id="rolemodel-text-p1">Role model description paragraph 1</p>
+        <br>
+        <p id="rolemodel-text-p2">Role model description paragraph 2</p>
+        <br>
+        <h2>How did she get there?</h2>
+        <h3>Would you like to follow in your role model's footsteps? Here's how she got there...</h3>
+        <p><span class="life-event-year">Year:</span> <span class="life-event">Role Model's life event 1</span></p>
+        <p><span class="life-event-year">Year:</span> <span class="life-event">Role Model's life event 2</span></p>
+        <p><span class="life-event-year">Year:</span> <span class="life-event">Role Model's life event 3</span></p>
+        <p><span class="life-event-year">Year:</span> <span class="life-event">Role Model's life event 4</span></p>
+        <p><span class="life-event-year">Year:</span> <span class="life-event">Role Model's life event 5</span></p>
+
+
+    </div>
+    <!-- Restart Quiz Button -->
+    <button class="hidden" id="restart-quiz-btn">Restart Quiz</button>
+
+    <a href="index.html">Go Home</a>
+
+    <script src="assets/js/questions_array.js"></script>
+    <script src="assets/js/rolemodel_array.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
