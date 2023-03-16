@@ -264,7 +264,7 @@ function showResults(topRolemodel) {
     scrollToTop();
 
     // populate rolemodel heading and text
-    populateRolemodelText(topRolemodel);
+    populateRolemodelContent(topRolemodel);
 
     // start again game button - reload page
     startAgainBtn.addEventListener('click', function () {
@@ -276,10 +276,12 @@ function showResults(topRolemodel) {
 // Helper Functions for showResults()
 
 // Populates rolemodel heading and text
-function populateRolemodelText(topRolemodel) {
+function populateRolemodelContent(topRolemodel) {
     for (let i = 0; i < rolemodels.length; i++) {
         if (rolemodels[i].code === topRolemodel) {
             rmName.innerText = rolemodels[i].name;
+            rmImage.src = rolemodels[i].img;
+            rmImage.alt = rolemodels[i].alt;
             rolemodelTextP1.innerText = rolemodels[i].description[0];
             rolemodelTextP2.innerText = rolemodels[i].description[1];
 

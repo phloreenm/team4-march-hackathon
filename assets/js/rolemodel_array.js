@@ -23,7 +23,7 @@ let rolemodels = [{
         },
         {
             year: "2006",
-            event: "Recommended and managed Google's purchase of YouTube"
+            event: "Responsible for Google's purchase of YouTube"
         },
         {
             year: "2014",
