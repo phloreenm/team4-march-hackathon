@@ -8,3 +8,27 @@
 .hidden {
     display: none;
 }
+
+#tie-rm1 {
+    background-color: lightblue;
+}
+
+#tie-rm2 {
+    background-color: green;
+}
+
+#tie-rm3 {
+    background-color: orange;
+}
+
+#tie-rm4 {
+    background-color: pink;
+}
+
+#tie-rm5 {
+    background-color: yellow;
+}
+
+#tie-rm6 {
+    background-color: red;
+}

@@ -11,20 +11,21 @@ const progressDiv = document.getElementById("progress-div");
 const progressText = document.getElementById("progress-text");
 const progressBar = document.getElementById("progressbar-fg");
 const restartGameBtn = document.getElementById("restart-game-btn");
-const answerDiv = document.getElementById("answer-div-hide");
-const answerTieDiv = document.getElementById("answer-tie-div-hide");
+const answerDiv = document.getElementById("answer-div");
+const answerTieDiv = document.getElementById("answer-tie-div");
 
 // declaring consts for Results DOM Objects
 const resultsDiv = document.getElementById("results-div");
-const personalityHeading = document.getElementById("personality-heading");
-const personalityTextP1 = document.getElementById("personality-text-p1");
-const personalityTextP2 = document.getElementById("personality-text-p2");
+const rmName = document.getElementById("rolemodel-winner");
+const rmImage = document.getElementById("role-model-image");
+const rolemodelTextP1 = document.getElementById("rolemodel-text-p1");
+const rolemodelTextP2 = document.getElementById("rolemodel-text-p2");
 const startAgainBtn = document.getElementById("start-again-btn");
 
 // declaring other variables
 let maxQuestions = 10;
 let username;
-let personalityTally = [];
+let answerTally = [];
 
 
 // Start Quiz Button - click event
@@ -43,22 +44,22 @@ function scrollToTop() {
 // Start Quiz Button Functionality ------------------------------------------ //
 
 function startGame() {
-    // Scroll to top of page
+
+ // Scroll to top of page
     scrollToTop();
 
-    // starts gameplay
-    welcomeDiv.classList.toggle("hidden");
-    gameDiv.classList.toggle("hidden");
+// starts gameplay
+    welcomeDiv.classList.add("hidden");
+    gameDiv.classList.remove("hidden");
     addQuestionContent(0);
     handleAnswer();
 
-    // restart button - reload page
+// restart button - reload page
     restartGameBtn.addEventListener('click', function () {
         window.location.reload();
     });
 }
 
-// Quiz Functionality --------------------------------------------------------------------- //
 
 // Populate the questions and answers & move on progress bar
 function addQuestionContent(index) {
@@ -100,13 +101,15 @@ function selectAndSubmit(target) {
         choice.classList.remove("selected");
         if (choice == target) {
             choice.classList.add("selected");
-            // logs the personality connected to that answer to personalityTally
-            logPersonalities(choice);
+            // logs the rolemodel connected to that answer to answerTally
+            logRolemodels(choice);
+            // disable button to avoid clicking multiple times
+            choice.disabled = true;
             // Sets short timeout before question refresh
             setTimeout(function () {
                 // remove current question from array and replace with next question or calculate results if game ended
                 if (questions.length <= 1) {
-                    findTopPersonality();
+                    findTopRolemodel();
                 } else {
                     questions.splice(0, 1);
                     addQuestionContent(0);
@@ -123,16 +126,17 @@ function selectAndSubmit(target) {
 
 // Helper Functions for selectAndSubmit
 
-// logs personality type for each answer to an array
-function logPersonalities(choice) {
+// logs Rolemodel code for each answer to an array
+function logRolemodels(choice) {
     // iterates through answers in questions_array
     questions[0].answers.forEach(answer => {
         // matches the selected answer to the same answer in the questions array
         if (choice.innerText === answer.answerText) {
-            // adds the personality type to an array
-            personalityTally.push(answer.answerType);
+            // adds the rolemodel code to an array
+            answerTally.push(answer.code);
         }
     });
+    console.log(answerTally);
 }
 
 // re-enable the buttons after question answered
@@ -142,83 +146,94 @@ function enableButtons() {
     });
 }
 
-// Calculates user personality & reveals results
-function findTopPersonality() {
+// Calculates user rolemodel & reveals results
+function findTopRolemodel() {
 
-    // updates personality scores in personalities array
-    for (let i = 0; i < personalities.length; i++) {
-        personalities[i].score = elementCount(personalityTally, personalities[i].type);
+    // updates Rolemodel scores in rolemodels array
+    for (let i = 0; i < rolemodels.length; i++) {
+        rolemodels[i].score = elementCount(answerTally, rolemodels[i].code);
     }
+    console.log(rolemodels[0].name + ": Score: " + rolemodels[0].score)
+    console.log(rolemodels[1].name + ": Score: " + rolemodels[1].score)
+    console.log(rolemodels[2].name + ": Score: " + rolemodels[2].score)
+    console.log(rolemodels[3].name + ": Score: " + rolemodels[3].score)
+    console.log(rolemodels[4].name + ": Score: " + rolemodels[4].score)
+    console.log(rolemodels[5].name + ": Score: " + rolemodels[5].score)
 
     // Checks for a tie
-    let topPersonalityArray = [];
-    checkForTie(topPersonalityArray);
+    let topRolemodelArray = [];
+    console.log(topRolemodelArray)
+    checkForTie(topRolemodelArray);
+    console.log("Top Role Model Array after checkForTie: " + topRolemodelArray)
 
     // if not tied reveal results, if tied run tie breaker & reveal results
-    let topPersonality;
-    if (topPersonalityArray.length > 1) {
+    let topRolemodel;
+    if (topRolemodelArray.length > 1) {
 
-        showTieBreaker(topPersonalityArray);
+        showTieBreaker(topRolemodelArray);
 
-        // sets the topPersonality personality based on clicked image
+        // sets the topRolemodel based on clicked image
         for (let i = 0; i < tieChoices.length; i++) {
             tieChoices[i].addEventListener("click", function () {
 
-                // adds the winning tie breaker personality to the personalityTally (for results calculations)                       
+                // adds the winning tie breaker rolemodel to the answerTally (for results calculations)                       
                 let tieWinner = tieChoices[i].getAttribute("data-type");
-                personalityTally.push(tieWinner);
+                answerTally.push(tieWinner);
 
                 // updates scores again post tie-break selection
-                for (let i = 0; i < personalities.length; i++) {
-                    personalities[i].score = elementCount(personalityTally, personalities[i].type);
+                for (let i = 0; i < rolemodels.length; i++) {
+                    rolemodels[i].score = elementCount(answerTally, rolemodels[i].code);
                 }
 
-                // sets winning personality based on last item in personalityTally
-                topPersonality = personalityTally[personalityTally.length - 1];
+                // sets winning rolemodel based on last item in answerTally
+                topRolemodel = answerTally[answerTally.length - 1];
 
                 // Reveals results
-                showResults(topPersonality);
+                showResults(topRolemodel);
             });
         }
 
     } else {
 
-        // if not tied - sets the winning personality
-        topPersonality = topPersonalityArray[0];
+        // if not tied - sets the winning rolemodel
+        topRolemodel = topRolemodelArray[0];
 
         // Reveals results
-        showResults(topPersonality);
+        showResults(topRolemodel);
     }
 }
 
-// Helper functions for findTopPersonality
+// Helper functions for findTopRolemodel
 
-// Checks for tied personality results
-function checkForTie(topPersonalityArray) {
+// Checks for tied Rolemodel results
+function checkForTie(topRolemodelArray) {
 
-    // creates an array of the number of times each personality occurs
+    // creates an array of the number of times each rolemodel occurs
     let scoreArray = [];
-    for (let i = 0; i < personalities.length; i++) {
-        scoreArray.push(personalities[i].score);
+    for (let i = 0; i < rolemodels.length; i++) {
+        scoreArray.push(rolemodels[i].score);
     }
+    console.log("scoreArray: " + scoreArray);
 
-    // calculate the maximum number of times any personality type appears
-    let maxPersonalityScore = Math.max(...scoreArray);
+    // calculate the maximum number of times any rolemodel code appears
+    let maxRolemodelScore = Math.max(...scoreArray);
+    console.log("maxRolemodelScore: " + maxRolemodelScore)
 
-    // create an array of the winning personalities
-    for (let i = 0; i < personalities.length; i++) {
-        if (personalities[i].score === maxPersonalityScore) {
-            topPersonalityArray.push(personalities[i].type);
+    // create an array of the winning rolemodels
+    for (let i = 0; i < rolemodels.length; i++) {
+        if (rolemodels[i].score === maxRolemodelScore) {
+            topRolemodelArray.push(rolemodels[i].code);
         }
     }
+    console.log("Top Role Model Array inside checkForTie: " + topRolemodelArray)
 }
 
 // Reveals Tie Breaker
-function showTieBreaker(topPersonalityArray) {
+function showTieBreaker(topRolemodelArray) {
 
-    // reveals photos for tied personalities
+    // reveals photos for tied rolemodels
     for (let i = 0; i < tieChoices.length; i++) {
-        if (topPersonalityArray.includes(tieChoices[i].getAttribute("data-type"))) {
+        if (topRolemodelArray.includes(tieChoices[i].getAttribute("data-type"))) {
             tieChoices[i].classList.remove("hidden");
         }
     }
@@ -239,15 +254,15 @@ function elementCount(arr, element) {
 // Results Page Functionality ------------------------------------------------------------------------------ //
 
 // Reveal Results
-function showResults(topPersonality) {
+function showResults(topRolemodel) {
 
     // hide game div & reveal results divs, scroll to top of page
-    gameDiv.classList.toggle("hidden");
-    resultsDiv.classList.toggle("hidden");
+    gameDiv.classList.add("hidden");
+    resultsDiv.classList.remove("hidden");
     scrollToTop();
 
-    // populate personality heading and text
-    populatePersonalityText(topPersonality);
+    // populate rolemodel heading and text
+    populateRolemodelText(topRolemodel);
 
     // start again game button - reload page
     startAgainBtn.addEventListener('click', function () {
@@ -258,13 +273,13 @@ function showResults(topPersonality) {
 
 // Helper Functions for showResults()
 
-// Populates personality heading and text
-function populatePersonalityText(topPersonality) {
-    for (let i = 0; i < personalities.length; i++) {
-        if (personalities[i].type === topPersonality) {
-            personalityHeading.innerText = `${username.value}, YOU ARE ${personalities[i].prefix}... ${personalities[i].name}`;
-            personalityTextP1.innerText = personalities[i].text[0];
-            personalityTextP2.innerText = personalities[i].text[1];
+// Populates rolemodel heading and text
+function populateRolemodelText(topRolemodel) {
+    for (let i = 0; i < rolemodels.length; i++) {
+        if (rolemodels[i].code === topRolemodel) {
+            rmName.innerText = rolemodels[i].name;
+            rolemodelTextP1.innerText = rolemodels[i].description[0];
+            rolemodelTextP2.innerText = rolemodels[i].description[1];
         }
     }
 }

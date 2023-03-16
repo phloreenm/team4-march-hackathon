@@ -28,33 +28,33 @@
             <div class="progressbar" id="progressbar-bg"></div>
         </div>
 
-        <div class="" id="answer-div-hide">
-            <h2 class="weight-500 body-font" id="question-text">Question Text</h2>
+        <div class="" id="answer-div">
+            <h2 class="weight-500 body-font" id="question-text">Question Placeholder</h2>
             <div id="answer-div">
-                <button class="">Answer 1</button>
-                <button class="">Answer 2</button>
-                <button class="">Answer 3</button>
-                <button class="">Answer 4</button>
-                <button class="">Answer 5</button>
-                <button class="">Answer 6</button>
+                <button class="btn-choice">Placeholder 1</button>
+                <button class="btn-choice">Placeholder 2</button>
+                <button class="btn-choice">Placeholder 3</button>
+                <button class="btn-choice">Placeholder 4</button>
+                <button class="btn-choice">Placeholder 5</button>
+                <button class="btn-choice">Placeholder 6</button>
             </div>
         </div>
-        <div class="hidden" id="answer-tie-div-hide">
+        <div class="hidden" id="answer-tie-div">
             <h2 id="tie-break-title">Tie Breaker!</h2>
             <p>We have a tie! Choose a photo that inspires you and see your results...</p>
             <div class="" id="answer-tie-div">
-                <button class="btn-choice-tie question-photo rm_one hidden" id="tie-btn1" aria-label=""
-                    data-type="rm_one"></button>
-                <button class="btn-choice-tie question-photo rm_two hidden" id="tie-btn2" aria-label=""
-                    data-type="rm_two"></button>
-                <button class="btn-choice-tie question-photo rm_three hidden" id="tie-btn3" aria-label=""
-                    data-type="rm_three"></button>
-                <button class="btn-choice-tie question-photo rm_four hidden" id="tie-btn4" aria-label=""
-                    data-type="rm_four"></button>
-                <button class="btn-choice-tie question-photo rm_five hidden" id="tie-btn5" aria-label=""
-                    data-type="rm_five"></button>
-                <button class="btn-choice-tie question-photo rm_six hidden" id="tie-btn6" aria-label=""
-                    data-type="rm_six"></button>
+                <button class="btn-choice-tie question-photo hidden" id="tie-rm1" aria-label=""
+                    data-type="rmOne">Role Model 1 Tie Button (Image to go here)</button>
+                <button class="btn-choice-tie question-photo hidden" id="tie-rm2" aria-label=""
+                    data-type="rmTwo">Role Model 2 Tie Button (Image to go here)</button>
+                <button class="btn-choice-tie question-photo hidden" id="tie-rm3" aria-label=""
+                    data-type="rmThree">Role Model 3 Tie Button (Image to go here)</button>
+                <button class="btn-choice-tie question-photo hidden" id="tie-rm4" aria-label=""
+                    data-type="rmFour">Role Model 4 Tie Button (Image to go here)</button>
+                <button class="btn-choice-tie question-photo hidden" id="tie-rm5" aria-label=""
+                    data-type="rmFive">Role Model 5 Tie Button (Image to go here)</button>
+                <button class="btn-choice-tie question-photo hidden" id="tie-rm6" aria-label=""
+                    data-type="rmSix">Role Model 6 Tie Button (Image to go here)</button>
             </div>
         </div>
 
@@ -66,8 +66,7 @@
 
     <!-- Results -->
     <div class="hidden" id="results-div">
-        <h1 id="results-heading">Your Role Model Is....</h1>
-        <h2>Role Model Name</h2>
+        <h1 id="results-heading">Your Role Model Is.... <span id="rolemodel-winner">Winning Rolemodel</span></h1>
         <img src="assets/images/susan_wojcicki.jpg" id="role-model-image" alt="">
 
         <p id="rolemodel-text-p1">Role model description paragraph 1</p>

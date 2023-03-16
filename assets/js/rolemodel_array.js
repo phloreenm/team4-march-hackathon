@@ -1,5 +1,6 @@
 let rolemodels = [{
     code: "rmOne",
+    score: 0,
     name: "Susan Wojcicki",
     img: "assets/images/susan_wojcicki.jpg",
     alt: "Image of Susan Wojcicki",
@@ -17,6 +18,7 @@ let rolemodels = [{
 },
 {
     code: "rmTwo",
+    score: 0,
     name: "Annie Easley",
     img: "assets/images/annie_easley.jpg",
     alt: "Image of Annie Easley",
@@ -34,6 +36,7 @@ let rolemodels = [{
 },
 {
     code: "rmThree",
+    score: 0,
     name: "Role Model 3",
     img: "assets/images/susan_wojcicki.jpg",
     alt: "Image of role model 3",
@@ -51,6 +54,7 @@ let rolemodels = [{
 },
 {
     code: "rmFour",
+    score: 0,
     name: "Role Model 4",
     img: "assets/images/susan_wojcicki.jpg",
     alt: "Image of role model 2",
@@ -68,6 +72,7 @@ let rolemodels = [{
 },
 {
     code: "rmFive",
+    score: 0,
     name: "Role Model 5",
     img: "assets/images/susan_wojcicki.jpg",
     alt: "Image of role model 5",
@@ -85,6 +90,7 @@ let rolemodels = [{
 },
 {
     code: "rmSix",
+    score: 0,
     name: "Role Model 6",
     img: "assets/images/susan_wojcicki.jpg",
     alt: "Image of role model 6",
