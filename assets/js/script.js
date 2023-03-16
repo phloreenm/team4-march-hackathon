@@ -20,6 +20,8 @@ const rmName = document.getElementById("rolemodel-winner");
 const rmImage = document.getElementById("role-model-image");
 const rolemodelTextP1 = document.getElementById("rolemodel-text-p1");
 const rolemodelTextP2 = document.getElementById("rolemodel-text-p2");
+const eventsYear = Array.from(document.getElementsByClassName("life-event-year"));
+const eventsText = Array.from(document.getElementsByClassName("life-event"));
 const startAgainBtn = document.getElementById("start-again-btn");
 
 // declaring other variables
@@ -45,16 +47,16 @@ function scrollToTop() {
 
 function startGame() {
 
- // Scroll to top of page
+    // Scroll to top of page
     scrollToTop();
 
-// starts gameplay
+    // starts gameplay
     welcomeDiv.classList.add("hidden");
     gameDiv.classList.remove("hidden");
     addQuestionContent(0);
     handleAnswer();
 
-// restart button - reload page
+    // restart button - reload page
     restartGameBtn.addEventListener('click', function () {
         window.location.reload();
     });
@@ -280,6 +282,13 @@ function populateRolemodelText(topRolemodel) {
             rmName.innerText = rolemodels[i].name;
             rolemodelTextP1.innerText = rolemodels[i].description[0];
             rolemodelTextP2.innerText = rolemodels[i].description[1];
+
+            // populate life events
+            let lifeEvents = rolemodels[i].events;
+            for (let i = 0; i < lifeEvents.length; i++) {
+                eventsYear[i].innerText = `${lifeEvents[i].year}:`;
+                eventsText[i].innerText = lifeEvents[i].event;
+            };
         }
     }
 }
