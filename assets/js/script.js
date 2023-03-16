@@ -2,7 +2,7 @@
 const welcomeDiv = document.getElementById("welcome-div");
 
 // declaring consts for Game DOM Objects
-const startGameBtn = document.getElementById("start-game-btn");
+const startQuizBtn = document.getElementById("start-quiz-btn");
 const gameDiv = document.getElementById("game-div");
 const questionText = document.getElementById("question-text");
 const choices = Array.from(document.getElementsByClassName("btn-choice"));
@@ -10,7 +10,7 @@ const tieChoices = Array.from(document.getElementsByClassName("btn-choice-tie"))
 const progressDiv = document.getElementById("progress-div");
 const progressText = document.getElementById("progress-text");
 const progressBar = document.getElementById("progressbar-fg");
-const restartGameBtn = document.getElementById("restart-game-btn");
+const restartQuizBtn = document.getElementById("restart-quiz-btn");
 const answerDiv = document.getElementById("answer-div");
 const answerTieDiv = document.getElementById("answer-tie-div");
 
@@ -31,7 +31,7 @@ let answerTally = [];
 
 
 // Start Quiz Button - click event
-startGameBtn.addEventListener('click', function () {
+startQuizBtn.addEventListener('click', function () {
     startGame();
 });
 
@@ -53,11 +53,12 @@ function startGame() {
     // starts gameplay
     welcomeDiv.classList.add("hidden");
     gameDiv.classList.remove("hidden");
+    restartQuizBtn.classList.remove("hidden");
     addQuestionContent(0);
     handleAnswer();
 
     // restart button - reload page
-    restartGameBtn.addEventListener('click', function () {
+    restartQuizBtn.addEventListener('click', function () {
         window.location.reload();
     });
 }

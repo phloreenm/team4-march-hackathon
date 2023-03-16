@@ -1,4 +1,85 @@
-/* DOM Manipulation Classes - for JavaScript */
+/* Tie Break Images */
+
+.tie-photo {
+    border: none;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    transition: background-color 0.25s ease-in-out;
+    -moz-transition: background-color 0.25s ease-in-out;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -o-transition: background-color 0.25s ease-in-out;
+}
+
+#tie-rm1 {
+    background-image: url("../images/tiebreak_placeholder.jpg");
+}
+
+#tie-rm2 {
+    background-image: url("../images/tiebreak_placeholder.jpg");
+}
+
+#tie-rm3 {
+    background-image: url("../images/tiebreak_placeholder.jpg");
+}
+
+#tie-rm4 {
+    background-image: url("../images/tiebreak_placeholder.jpg");
+}
+
+#tie-rm5 {
+    background-image: url("../images/tiebreak_placeholder.jpg");
+}
+
+#tie-rm6 {
+    background-image: url("../images/tiebreak_placeholder.jpg");
+}
+
+/* Tie Break Images - hover effect */
+.question-photo:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
+}
+
+
+/* Button Styling - NEEDS UPDATING - PLACEHOLDER FOR HOVER EFFECT */
+.btn-choice,
+#restart-quiz-btn,
+#start-quiz-btn {
+    background-color: blanchedalmond;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+
+/* Hover effects - only on hover devices - NEEDS UPDATING - PLACEHOLDER FOR HOVER EFFECT*/
+@media (hover: hover) {
+    .btn-choice:hover,
+    #restart-quiz-btn:hover,
+    #start-quiz-btn:hover {
+        background-color: pink;
+    }
+
+    .question-photo:hover {
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+}
+
+/* DOM Manipulation Classes - used in JavaScript */
 
 .selected,
 .selected:hover {
@@ -7,28 +88,4 @@
 
 .hidden {
     display: none;
-}
-
-#tie-rm1 {
-    background-color: lightblue;
-}
-
-#tie-rm2 {
-    background-color: green;
-}
-
-#tie-rm3 {
-    background-color: orange;
-}
-
-#tie-rm4 {
-    background-color: pink;
-}
-
-#tie-rm5 {
-    background-color: yellow;
-}
-
-#tie-rm6 {
-    background-color: red;
 }
