@@ -1,6 +1,8 @@
 /* Tie Break Images */
 
-.tie-photo {
+.btn-choice-tie {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     width: 200px;
     height: 200px;
@@ -14,6 +16,18 @@
     -moz-transition: background-color 0.25s ease-in-out;
     -webkit-transition: background-color 0.25s ease-in-out;
     -o-transition: background-color 0.25s ease-in-out;
+}
+
+/* Tie Break Images - hover effect */
+.btn-choice-tie:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
 }
 
 #tie-rm1 {
@@ -40,18 +54,6 @@
     background-image: url("../images/tiebreak_placeholder.jpg");
 }
 
-/* Tie Break Images - hover effect */
-.question-photo:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: inherit;
-    border-radius: inherit;
-}
-
 
 /* Button Styling - NEEDS UPDATING - PLACEHOLDER FOR HOVER EFFECT */
 .btn-choice,
@@ -73,7 +75,7 @@
         background-color: pink;
     }
 
-    .question-photo:hover {
+    .btn-choice-tie:hover {
         background-color: rgba(0, 0, 0, .5);
     }
 
