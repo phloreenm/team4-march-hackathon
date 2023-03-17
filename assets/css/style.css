@@ -12,11 +12,13 @@ body {
     justify-content: space-between;
   }
 
-  /* .cards-container {
-    height: auto;
-  } */
+.navbar-collapse {
+    flex-basis: 100%;
+    /* flex-grow: 1; */
+    align-items: center;
+}
 
-  .card {
+.card {
     font-size: 1em;
     overflow: hidden;
     height: 250px;
