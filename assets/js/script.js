@@ -15,6 +15,7 @@ const answerDiv = document.getElementById("answer-div");
 const answerTieDiv = document.getElementById("answer-tie-div");
 
 // declaring consts for Results DOM Objects
+const resultsIntro = document.getElementById("quiz-results-intro")
 const resultsDiv = document.getElementById("results-div");
 const rmName = document.getElementById("rolemodel-winner");
 const rmImage = document.getElementById("role-model-image");
@@ -256,12 +257,34 @@ function elementCount(arr, element) {
 
 // Results Page Functionality ------------------------------------------------------------------------------ //
 
-// Reveal Results
+// Reveal Results - links to rolemodel pages
 function showResults(topRolemodel) {
-    
+    let resultsPage;
+    switch (topRolemodel) {
+        case "rmOne":
+
+            resultsPage = "susan-wojcicki.html";
+            break;
+        case "rmTwo":
+            resultsPage = "annie-easley.html";
+            break;
+        case "rmThree":
+            resultsPage = "nikki-durkin.html";
+            break;
+        case "rmFour":
+            resultsPage = "hedy-lamarr.html";
+            break;
+        case "rmFive":
+            resultsPage = "mary-wilkes.html";
+            break;
+        case "rmSix":
+            resultsPage = "ada-lovelace.html";
+            break;
+    };
+    window.location.href = resultsPage;
 }
 
-    /**  OLD FUNCTIONALITY TO REVEAL ON QUIZ PAGE - REMOVE ONCE LINKS ARE IN PLACE
+/**  OLD FUNCTIONALITY TO REVEAL ON QUIZ PAGE - REMOVE ONCE LINKS ARE IN PLACE
     // hide game div & reveal results divs, scroll to top of page
     gameDiv.classList.add("hidden");
     resultsDiv.classList.remove("hidden");

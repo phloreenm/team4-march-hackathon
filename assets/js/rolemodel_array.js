@@ -166,33 +166,33 @@ let rolemodels = [{
 {
     code: "rmSix",
     score: 0,
-    name: "Role Model 6",
-    img: "assets/images/susan_wojcicki.jpg",
-    alt: "Image of role model 6",
+    name: "Ada Lovelace",
+    img: "assets/images/ada_lovelace.jpg",
+    alt: "Image of Ada Lovelace",
     description: [
-        "Role Model 6 description paragraph 1",
-        "Role Model 6 description paragraph 2"
+        "Ada Lovelace was born as Augusta Ada Byron on December 10, 1815. She was the only legitimate child of the famous poet Lord George Gordon Byron. Lord Byron's marriage to Lovelace's mother, Lady Anne Isabella Milbanke Byron, was not a happy one and Lady Byron separated from her husband only weeks after their daughter was born. Lovelace's mother insisted that she be taught logic, science and mathematics from a young age - which was rare for women at the time. Ada Lovelace grew up to become a leading 19th century mathematician and an associate of Charles Babbage, for whose prototype of a digital computer she created a program.",
+        "Through Babbage, Lovelace began studying advanced mathematics with University of London professor Augustus de Morgan.  She tried to develop mathematical schemes for winning at gambling. Unfortunately, her schemes failed and put her in financial peril. She is chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation and published the first algorithm intended to be processed by such a machine."
     ],
     events: [
         {
-            year: "Year",
-            event: "Event"
+            year: "Childhood",
+            event: "Her mother insisted that she be taught logic, science and mathematics from a young age"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1833",
+            event: "met Charles Babbage, a mathematician and inventor"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1842-43",
+            event: "Wrote what would later be considered the first computer algorithm"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1953",
+            event: "B.V. Bowden, republished Ada's notes in 'Faster Than Thought: A Symposium on Digital Computing Machines'"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1980",
+            event: "the U.S. Department of Defence named a newly developed computer language 'Ada', after Lovelace."
         }
     ]
 }]
