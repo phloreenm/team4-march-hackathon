@@ -3,13 +3,64 @@ body {
     height: 100%;
 }
 
-footer {
+/* Homepage */
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.navbar-collapse {
+    flex-basis: 100%;
+    /* flex-grow: 1; */
+    align-items: center;
+}
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    height: 250px;
+    width: auto;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-top:20px;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+}
+
+.card-btn {
+    background-color: #c5c5ee;
+    border-color: grey;
+    color: black;
+}
+
+/* footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px;
-}
+} */
 
+/* Profile Pages */
+
+.img-profile {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
 
 /* Tie Break Images */
 
