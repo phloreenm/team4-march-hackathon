@@ -258,7 +258,10 @@ function elementCount(arr, element) {
 
 // Reveal Results
 function showResults(topRolemodel) {
+    
+}
 
+    /**  OLD FUNCTIONALITY TO REVEAL ON QUIZ PAGE - REMOVE ONCE LINKS ARE IN PLACE
     // hide game div & reveal results divs, scroll to top of page
     gameDiv.classList.add("hidden");
     resultsDiv.classList.remove("hidden");
@@ -266,11 +269,6 @@ function showResults(topRolemodel) {
 
     // populate rolemodel heading and text
     populateRolemodelContent(topRolemodel);
-
-    // start again game button - reload page
-    startAgainBtn.addEventListener('click', function () {
-        window.location.reload();
-    });
 
 }
 
@@ -295,3 +293,4 @@ function populateRolemodelContent(topRolemodel) {
         }
     }
 }
+*/
