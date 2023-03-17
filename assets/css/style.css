@@ -165,3 +165,14 @@ body {
 .hidden {
     display: none;
 }
+
+/* 404 page styling */
+
+.error404_container{
+    margin: auto;
+    text-align: center;
+}
+
+.error404_container, img{
+    max-width: 80%;
+}
