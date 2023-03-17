@@ -82,6 +82,13 @@ footer {
     -o-transition: all 0.25s ease-in-out;
 }
 
+/* REMOVE LATER - JUST FOR JS TESTING */
+.btn-choice-tie {
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+
 
 /* Hover effects - only on hover devices - NEEDS UPDATING - PLACEHOLDER FOR HOVER EFFECT*/
 
