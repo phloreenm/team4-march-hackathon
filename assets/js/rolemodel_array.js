@@ -67,75 +67,75 @@ let rolemodels = [{
 {
     code: "rmThree",
     score: 0,
-    name: "Role Model 3",
-    img: "assets/images/susan_wojcicki.jpg",
-    alt: "Image of role model 3",
+    name: "Nikki Durkin",
+    img: "assets/images/nikki_durkin.jpg",
+    alt: "Image of Nikki Durkin",
     description: [
-        "Role Model 3 description paragraph 1",
-        "Role Model 3 description paragraph 2"
+        "Nikki Durkin is an Australian entrepreneur who has made a significant impact in the tech industry through her innovative startups. She was born on December 19, 1991, and grew up in Sydney, where she attended the University of New South Wales, studying commerce and law. Durkin's entrepreneurial journey began in 2011 when she founded 99dresses, an online marketplace for trading clothing with virtual currency. Although the startup faced financial difficulties and eventually shut down in 2013, it was a testament to Durkin's ambition and innovation in the industry.",
+        "Following the closure of 99dresses, Durkin founded Codemakers in 2014, which provided coding education and resources for children. Her goal was to teach children how to code and equip them with the necessary tools to become future leaders in the technology industry. Codemakers was later acquired by 3P Learning, an Australian edtech company, in 2017. Currently, Durkin is the founder and CEO of Parity, a startup that aims to help companies support gender equality in the workplace. The platform offers a range of benefits that address gender gaps and support women in the workplace. Durkin's entrepreneurial journey has been marked by her passion for technology and her commitment to making a difference. She has demonstrated that through hard work, determination, and innovation, anyone can create meaningful change in the world of tech."
     ],
     events: [
         {
-            year: "Year",
-            event: "Event"
+            year: "1991",
+            event: "Nikki Durkin was born on December 19, in Australia"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "2011",
+            event: "Durkin founded 99dresses, an online marketplace for trading clothing with virtual currency"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "2013",
+            event: "99dresses shut down due to financial difficulties"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "2014",
+            event: "Durkin founded Codemakers, a company that provided coding education and resources for children"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "Present",
+            event: "Durkin is the founder and CEO of Parity, a startup that aims to help companies support gender equality in the workplace"
         }
     ]
 },
 {
     code: "rmFour",
     score: 0,
-    name: "Role Model 4",
-    img: "assets/images/susan_wojcicki.jpg",
-    alt: "Image of role model 2",
+    name: "Hedy Lamarr",
+    img: "assets/images/hedy_lamarr.jpg",
+    alt: "Image of Hedy Lamarr",
     description: [
-        "Role Model 4 description paragraph 1",
-        "Role Model 4 description paragraph 2"
+        "Hedy Lamarr was an Austrian-American actress and inventor who pioneered the technology that would one day form the basis for today's WiFi, GPS, and Bluetooth communication systems. An only child, Lamarr received a great deal of attention from her father, a bank director, who inspired her to look at the world with open eyes. He would often take her for long walks where he would discuss the inner-workings of machines, like the printing press or street cars. Meanwhile, Lamarr's mother introduced her to the arts, placing her in both ballet and piano lessons from a young age. Lamarr's brilliant mind was ignored, and her beauty took center stage when she was discovered by director Max Reinhardt at age 16 and became an actress. Howard Hughes helped to fuel the innovator in Lamarr. He took her to his airplane factories, showed her how the planes were built, and introduced her to the scientists behind process.",
+        "Lamarr once said, 'Improving things comes naturally to me.' She went on to create an upgraded stoplight and a tablet that dissolved in water to make a soda similar to Coca-Cola. However, her most significant invention was engineered as the United States geared up to enter World War II. In 1940 Lamarr met George Antheil at a dinner party. The two came up with an extraordinary new communication system used with the intention of guiding torpedoes to their targets in war. The system involved the use of 'frequency hopping' amongst radio waves, with both transmitter and receiver hopping to new frequencies together. Doing so prevented the interception of the radio waves, thereby allowing the torpedo to find its intended target. The Electronic Frontier Foundation jointly awarded Lamarr and Antheil with their Pioneer Award in 1997. Lamarr also became the first woman to receive the Invention Convention's Bulbie Gnass Spirit of Achievement Award. Although she died in 2000, Lamarr was inducted into the National Inventors Hall of Fame for the development of her frequency hopping technology in 2014. Such achievement has led Lamarr to be dubbed 'the mother of Wi-Fi' and other wireless communications like GPS and Bluetooth."
     ],
     events: [
         {
-            year: "Year",
-            event: "Event"
+            year: "1914",
+            event: "Born in Austria"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1926",
+            event: "Used to take walks with her father, who explained how technology functioned"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1942",
+            event: "Patented the first frequency hopping system"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1960",
+            event: "Hedy's work was incorporated into Bluetooth and GPS technology"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1997",
+            event: "Awarded the Electronic Frontier Foundation Pioneer Award"
         }
     ]
 },
 {
     code: "rmFive",
     score: 0,
-    name: "Role Model 5",
-    img: "assets/images/susan_wojcicki.jpg",
-    alt: "Image of role model 5",
+    name: "Mary Wilkes",
+    img: "assets/images/mary_wilkes.jpg",
+    alt: "Image of Mary Wilkes",
     description: [
         "Role Model 5 description paragraph 1",
         "Role Model 5 description paragraph 2"
@@ -166,33 +166,33 @@ let rolemodels = [{
 {
     code: "rmSix",
     score: 0,
-    name: "Role Model 6",
-    img: "assets/images/susan_wojcicki.jpg",
-    alt: "Image of role model 6",
+    name: "Ada Lovelace",
+    img: "assets/images/ada_lovelace.jpg",
+    alt: "Image of Ada Lovelace",
     description: [
-        "Role Model 6 description paragraph 1",
-        "Role Model 6 description paragraph 2"
+        "Ada Lovelace was born as Augusta Ada Byron on December 10, 1815. She was the only legitimate child of the famous poet Lord George Gordon Byron. Lord Byron's marriage to Lovelace's mother, Lady Anne Isabella Milbanke Byron, was not a happy one and Lady Byron separated from her husband only weeks after their daughter was born. Lovelace's mother insisted that she be taught logic, science and mathematics from a young age - which was rare for women at the time. Ada Lovelace grew up to become a leading 19th century mathematician and an associate of Charles Babbage, for whose prototype of a digital computer she created a program.",
+        "Through Babbage, Lovelace began studying advanced mathematics with University of London professor Augustus de Morgan.  She tried to develop mathematical schemes for winning at gambling. Unfortunately, her schemes failed and put her in financial peril. She is chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation and published the first algorithm intended to be processed by such a machine."
     ],
     events: [
         {
-            year: "Year",
-            event: "Event"
+            year: "Childhood",
+            event: "Her mother insisted that she be taught logic, science and mathematics from a young age"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1833",
+            event: "met Charles Babbage, a mathematician and inventor"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1842-43",
+            event: "Wrote what would later be considered the first computer algorithm"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1953",
+            event: "B.V. Bowden, republished Ada's notes in 'Faster Than Thought: A Symposium on Digital Computing Machines'"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1980",
+            event: "the U.S. Department of Defence named a newly developed computer language 'Ada', after Lovelace."
         }
     ]
 }]
