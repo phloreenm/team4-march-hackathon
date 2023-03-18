@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Merriweather+Sans:wght@800&display=swap');
+
 html,
 body {
     height: 100%;
+    font-family: 'Asap', sans-serif;
+
 }
 
 /* Homepage */
@@ -12,10 +16,47 @@ body {
     justify-content: space-between;
   }
 
+/* Navigation Bar */
+
 .navbar-collapse {
     flex-basis: 100%;
     /* flex-grow: 1; */
     align-items: center;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Callout Container */
+.callout-container {
+    height: 100vh;
+    background-image: url(../images/hero-image.jpg); 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.jumbotron {
+    color: rgb(53 201 204 / 99%);
+    /* margin-bottom: 20rem; */
+
+}
+
+.jumbotron-text {
+    color: white
+}
+
+.btn-jumbotron {
+    background-color: rgb(53 201 204 / 50%);
+    color: white;
+    font-weight: 700;
+    margin-top: 2rem;
 }
 
 .card {
@@ -45,6 +86,8 @@ body {
     border-color: grey;
     color: black;
 }
+
+/* Footer */
 
 footer {
     background-color: #c5c5ee;
