@@ -18,6 +18,15 @@ body {
     align-items: center;
 }
 
+.callout-container {
+    height: 100vh;
+    background-image: url(../images/hero-image.jpg); 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card {
     font-size: 1em;
     overflow: hidden;
