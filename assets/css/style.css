@@ -31,7 +31,7 @@ body {
 /* Callout Container */
 .callout-container {
     height: 100vh;
-    background-image: url(../images/hero-image.jpg); 
+    background-image: url(../images/hero-image.webp); 
     background-size: cover;
     display: flex;
     align-items: center;
