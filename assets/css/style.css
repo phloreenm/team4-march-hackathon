@@ -49,7 +49,8 @@ h1 {
 }
 
 .jumbotron-text {
-    color: white
+    color: rgb(41 75 79);
+    font-weight: 700;
 }
 
 .btn-jumbotron {
