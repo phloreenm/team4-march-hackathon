@@ -83,9 +83,15 @@ h1 {
 }
 
 .card-btn {
-    background-color: #c5c5ee;
-    border-color: grey;
-    color: black;
+    background-color: rgb(53 201 204 / 50%);;
+    border: none;
+    font-family: 'Asap', sans-serif;
+    color: #333;
+}
+
+.card-btn:hover {
+    background-color: rgb(41 75 79);
+    border: none;
 }
 
 
