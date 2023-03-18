@@ -94,9 +94,11 @@ h1 {
     border: none;
 }
 
-
-
 /* Profile Pages */
+
+.rm-container {
+    background-color: rgb(69 124 130 / 49%);
+}
 
 .img-profile {
     height: 300px;
