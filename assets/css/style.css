@@ -46,12 +46,12 @@ body {
     color: black;
 }
 
-/* footer {
-    position: absolute;
+footer {
+    background-color: #c5c5ee;
     bottom: 0;
     width: 100%;
     height: 60px;
-} */
+}
 
 /* Profile Pages */
 
@@ -97,27 +97,27 @@ body {
 }
 
 #tie-rm1 {
-    background-image: url("../images/tiebreak_placeholder.jpg");
+    background-image: url("../images/tb_susan.jpg");
 }
 
 #tie-rm2 {
-    background-image: url("../images/tiebreak_placeholder.jpg");
+    background-image: url("../images/tb_annie.jpg");
 }
 
 #tie-rm3 {
-    background-image: url("../images/tiebreak_placeholder.jpg");
+    background-image: url("../images/tb_nikki.jpg");
 }
 
 #tie-rm4 {
-    background-image: url("../images/tiebreak_placeholder.jpg");
+    background-image: url("../images/tb_hedy.jpg");
 }
 
 #tie-rm5 {
-    background-image: url("../images/tiebreak_placeholder.jpg");
+    background-image: url("../images/tb_mary.jpg");
 }
 
 #tie-rm6 {
-    background-image: url("../images/tiebreak_placeholder.jpg");
+    background-image: url("../images/tb_ada.jpg");
 }
 
 
