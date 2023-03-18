@@ -5,76 +5,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Women In Tech - Find Your Role Model</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Welcome -->
-    <div class="" id="welcome-div">
-        <h1 class="">WELCOME!</h1>
-        <p>Take our quiz to find your perfect Role Model</p>
-        <!-- Start Quiz Button -->
-        <button id="start-quiz-btn">Start Quiz</button>
-    </div>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/high-heels-icon-21.jpg" width="50" height="50" alt="highheels icon"> Follow
+                    her Footsteps
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
 
-    <!-- Game -->
-    <div class="hidden" id="game-div">
-        <div class="" id="progress-div">
-            <p id="progress-text"></p>
-            <div class="progressbar" id="progressbar-fg"></div>
-            <div class="progressbar" id="progressbar-bg"></div>
-        </div>
+                        <a class="nav-link active" href="quiz.html">Quiz</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Learn More About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="ada-lovelace.html">Ada Lovelace</a></li>
+                                <li><a class="dropdown-item" href="annie-easley.html">Annie Easley</a></li>
+                                <li><a class="dropdown-item" href="hedy-lamarr.html">Hedy Lemarr</a></li>
+                                <li><a class="dropdown-item" href="mary-wilkes.html">Mary Wilkes</a></li>
+                                <li><a class="dropdown-item" href="nikki-durkin.html">Nikki Durkin</a></li>
+                                <li><a class="dropdown-item" href="susan-wojcicki.html">Susan Wojcicki</a></li>
 
-        <div class="" id="answer-div">
-            <h2 class="weight-500 body-font" id="question-text">Question Placeholder</h2>
-            <div id="answer-div">
-                <button class="btn-choice">Placeholder 1</button>
-                <button class="btn-choice">Placeholder 2</button>
-                <button class="btn-choice">Placeholder 3</button>
-                <button class="btn-choice">Placeholder 4</button>
-                <button class="btn-choice">Placeholder 5</button>
-                <button class="btn-choice">Placeholder 6</button>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation Bar -->
+    </header>
+    <div id="quiz-bg">
+        <!-- Welcome -->
+        <div class="container" id="welcome-div">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-8 text-center">
+                    <h1>Take Our Quiz!</h1>
+                    <p>Ladies, we know it can be lonely in the world of Tech. We need female role models to inspire us
+                        and
+                        there are some brilliant women out there who've changed the world through their work.<br><br>
+                        Take our personality quiz to find your perfect role model.</p>
+                    <!-- Start Quiz Button -->
+                    <button id="start-quiz-btn" class="btn btn-primary btn-sm game-btn">Start Quiz</button>
+                </div>
             </div>
         </div>
-        <div class="hidden" id="answer-tie-div">
-            <h2 id="tie-break-title">Tie Breaker!</h2>
-            <p>We have a tie! Choose a photo that inspires you to see your results...</p>
-            <div class="" id="answer-tie-div">
-                <button class="btn-choice-tie hidden" id="tie-rm1" aria-label="" data-type="rmOne"></button>
-                <button class="btn-choice-tie hidden" id="tie-rm2" aria-label="" data-type="rmTwo"></button>
-                <button class="btn-choice-tie hidden" id="tie-rm3" aria-label="" data-type="rmThree"></button>
-                <button class="btn-choice-tie hidden" id="tie-rm4" aria-label="" data-type="rmFour"></button>
-                <button class="btn-choice-tie hidden" id="tie-rm5" aria-label="" data-type="rmFive"></button>
-                <button class="btn-choice-tie hidden" id="tie-rm6" aria-label="" data-type="rmSix"></button>
+
+        <!-- Game -->
+        <div class="hidden" id="game-div">
+
+            <div class="" id="progress-div">
+                <p id="progress-text"></p>
+                <div class="progressbar" id="progressbar-fg"></div>
+                <div class="progressbar" id="progressbar-bg"></div>
             </div>
+
+
+            <div class="" id="answer-div">
+                <h2 class="text-center" id="question-text">Question Placeholder</h2>
+                <div class="container">
+
+                    <div class="row row-cols-1 row-cols-md-2 gy-3 justify-content-center text-center" id="answer-div">
+                        <div class="col"><button class="btn-choice">Placeholder 1</button></div>
+                        <div class="col"><button class="btn-choice">Placeholder 2</button></div>
+                        <div class="col"><button class="btn-choice">Placeholder 3</button></div>
+                        <div class="col"><button class="btn-choice">Placeholder 4</button></div>
+                        <div class="col"><button class="btn-choice">Placeholder 5</button></div>
+                        <div class="col"><button class="btn-choice">Placeholder 6</button></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center hidden" id="answer-tie-hide-div">
+                <h2 id="tie-break-title">Tie Breaker!</h2>
+                <p>We have a tie! Choose a photo that inspires you to see your results...</p>
+                <div class="gy-3 justify-content-center text-center" id="answer-tie-div">
+                    <button class="btn-choice-tie hidden" id="tie-rm1" aria-label="" data-type="rmOne"></button>
+                    <button class="btn-choice-tie hidden" id="tie-rm2" aria-label="" data-type="rmTwo"></button>
+                    <button class="btn-choice-tie hidden" id="tie-rm3" aria-label="" data-type="rmThree"></button>
+                    <button class="btn-choice-tie hidden" id="tie-rm4" aria-label="" data-type="rmFour"></button>
+                    <button class="btn-choice-tie hidden" id="tie-rm5" aria-label="" data-type="rmFive"></button>
+                    <button class="btn-choice-tie hidden" id="tie-rm6" aria-label="" data-type="rmSix"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Restart Quiz Button -->
+        <div class="container text-center" id="restart-btn-div">
+            <button class="hidden btn btn-primary btn-sm game-btn" id="restart-quiz-btn">Restart Quiz</button>
         </div>
     </div>
 
-    <!-- Results -->
-    <div class="hidden" id="results-div">
-        <h1 id="results-heading">Your Role Model Is.... <span id="rolemodel-winner">Winning Rolemodel</span></h1>
-        <img src="" id="role-model-image" alt="">
+    <footer>
+        <ul class="social-icons">
+            <li>
+                <a href="#" target="_blank" rel="nofollow" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="nofollow" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="nofollow" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="nofollow" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="footer-text">
+            &copy; 2023 The Incredibles. All Rights Reserved.
+        </div>
+    </footer>
 
-        <p id="rolemodel-text-p1">Role model description paragraph 1</p>
-        <br>
-        <p id="rolemodel-text-p2">Role model description paragraph 2</p>
-        <br>
-        <h2>How did she get there?</h2>
-        <h3>Would you like to follow in your role model's footsteps? Here's how she got there...</h3>
-        <p><span class="life-event-year">Year:</span> <span class="life-event">Role Model's life event 1</span></p>
-        <p><span class="life-event-year">Year:</span> <span class="life-event">Role Model's life event 2</span></p>
-        <p><span class="life-event-year">Year:</span> <span class="life-event">Role Model's life event 3</span></p>
-        <p><span class="life-event-year">Year:</span> <span class="life-event">Role Model's life event 4</span></p>
-        <p><span class="life-event-year">Year:</span> <span class="life-event">Role Model's life event 5</span></p>
-
-
-    </div>
-    <!-- Restart Quiz Button -->
-    <button class="hidden" id="restart-quiz-btn">Restart Quiz</button>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/72dd490aed.js" crossorigin="anonymous"></script>
     <script src="assets/js/questions_array.js"></script>
     <script src="assets/js/rolemodel_array.js"></script>
     <script src="assets/js/script.js"></script>
