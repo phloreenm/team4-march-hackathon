@@ -137,29 +137,29 @@ let rolemodels = [{
     img: "assets/images/mary_wilkes.jpg",
     alt: "Image of Mary Wilkes",
     description: [
-        "Role Model 5 description paragraph 1",
-        "Role Model 5 description paragraph 2"
+        "In eighth grade, Mary Allen Wilkes had a geography teacher tell her that she ought to be a computer programmer when she grew up. Little did they both know, Mary would not only become a programmer, but she would eventually become known as the very first person to ever use what we now consider a 'PC' in her own living room. After she graduated from college, Mary had initially wanted to be a lawyer but was discouraged from that path due to the field not being very friendly to women at the time. She thought about what her teacher had once told her about being a programmer, so she had her parents drive her to MIT so she could apply for a job. At the time, there was no coding test or experience necessary, only the ability to think logically. Because Mary had studied logic and philosophy in college, she was easily able to pass the test to become a programmer.",
+        "After working on large, punch-card programmed computers for IBM, Mary was eventually assigned to work on a new, smaller computer that had its own screen and keyboard. The LINC became her most well-known project. It was the very first 'minicomputer' - and the predecessor to what we consider personal computers today. Mary went on to co-author the book, “Programming the LINC” with Wesley A. Clark. The next project Clark worked on after the LINC was to design 'macromodules' which were computer building blocks. Mary was the one to develop the multiply macromodule, which was the most complex of the entire set. Mary has said that programming computers was intellectually stimulating but socially isolating, and she really wanted to fulfill her childhood dream of becoming a litigator. After her amazing work as a programmer and developer of many computer programming manuals, Mary Allen Wilkes attended Harvard Law School and became a lawyer, and spent most of her working years practicing law."
     ],
     events: [
         {
-            year: "Year",
-            event: "Event"
+            year: "1937",
+            event: "Born in Chicago, Illinois"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1959",
+            event: "Graduated from College studying Philosophy and Theology"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1960",
+            event: "Started working at MIT, programming the IBM 704 and IBM 709"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1961",
+            event: "Joined the  LINC design project, where she was a major contributor to the TX-0 and TX-2 home computers"
         },
         {
-            year: "Year",
-            event: "Event"
+            year: "1965",
+            event: "Wilkes designed the multiply micromodule, the most complex set of computer building blocks ever known."
         }
     ]
 },
