@@ -219,3 +219,44 @@ footer {
 .error404_container, img{
     max-width: 80%;
 }
+
+/* social icons styling */
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-icons li:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #333;
+    font-size: 20px;
+  }
+
+  /* footer section */
+
+  footer{
+    margin-top: 1rem;
+  }
+
+  .footer-text {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+  }
