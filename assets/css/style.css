@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Merriweather+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wghtAsap:wght@300;500;600;700&family=Merriweather+Sans:wght@800&display=swap');
 
 html,
 body {
@@ -106,6 +106,20 @@ footer {
     margin-bottom: 10px;
 }
 
+#journey-div h2 {
+    padding-bottom: 10px;
+}
+
+.event-year {
+    font-weight: 800;
+}
+
+.event {
+    padding-left: 20px;
+
+}
+
+/* Quiz */
 /* Tie Break Images */
 
 .btn-choice-tie {
@@ -175,13 +189,6 @@ footer {
     -moz-transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
-}
-
-/* REMOVE LATER - JUST FOR JS TESTING */
-.btn-choice-tie {
-    color: red;
-    font-weight: bold;
-    font-size: 40px;
 }
 
 
