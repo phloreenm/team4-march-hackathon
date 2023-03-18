@@ -275,7 +275,7 @@ h1 {
 
 @media (hover: hover) {
     .btn-choice:hover {
-        background-color: rgb(41 75 79);
+        background-color: rgb(25, 160, 175);
         color: white;
     }
 
@@ -286,6 +286,7 @@ h1 {
     .game-btn:hover {
         background-color: rgba(211, 238, 241, 1);
         color: #333;
+        box-shadow: 0px 0px 6px rgba(7, 32, 35, 0.5);
         border: none;
     }
 }
@@ -296,6 +297,7 @@ h1 {
 .selected,
 .selected:hover {
     background-color: rgb(41 75 79);
+    color: white;
 }
 
 .hidden {
