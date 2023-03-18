@@ -12,18 +12,8 @@ const progressText = document.getElementById("progress-text");
 const progressBar = document.getElementById("progressbar-fg");
 const restartQuizBtn = document.getElementById("restart-quiz-btn");
 const answerDiv = document.getElementById("answer-div");
-const answerTieDiv = document.getElementById("answer-tie-div");
+const answerTieHideDiv = document.getElementById("answer-tie-hide-div");
 
-// declaring consts for Results DOM Objects
-const resultsIntro = document.getElementById("quiz-results-intro")
-const resultsDiv = document.getElementById("results-div");
-const rmName = document.getElementById("rolemodel-winner");
-const rmImage = document.getElementById("role-model-image");
-const rolemodelTextP1 = document.getElementById("rolemodel-text-p1");
-const rolemodelTextP2 = document.getElementById("rolemodel-text-p2");
-const eventsYear = Array.from(document.getElementsByClassName("life-event-year"));
-const eventsText = Array.from(document.getElementsByClassName("life-event"));
-const startAgainBtn = document.getElementById("start-again-btn");
 
 // declaring other variables
 let maxQuestions = 10;
@@ -245,7 +235,7 @@ function showTieBreaker(topRolemodelArray) {
     // hides the main questions div and reveals the tie-breaker div
     answerDiv.classList.add("hidden");
     progressDiv.classList.add("hidden");
-    answerTieDiv.classList.remove("hidden");
+    answerTieHideDiv.classList.remove("hidden");
 }
 
 // Function to check for number of times an element occurs in an array
@@ -283,37 +273,3 @@ function showResults(topRolemodel) {
     };
     window.location.href = resultsPage;
 }
-
-/**  OLD FUNCTIONALITY TO REVEAL ON QUIZ PAGE - REMOVE ONCE LINKS ARE IN PLACE
-    // hide game div & reveal results divs, scroll to top of page
-    gameDiv.classList.add("hidden");
-    resultsDiv.classList.remove("hidden");
-    scrollToTop();
-
-    // populate rolemodel heading and text
-    populateRolemodelContent(topRolemodel);
-
-}
-
-// Helper Functions for showResults()
-
-// Populates rolemodel heading and text
-function populateRolemodelContent(topRolemodel) {
-    for (let i = 0; i < rolemodels.length; i++) {
-        if (rolemodels[i].code === topRolemodel) {
-            rmName.innerText = rolemodels[i].name;
-            rmImage.src = rolemodels[i].img;
-            rmImage.alt = rolemodels[i].alt;
-            rolemodelTextP1.innerText = rolemodels[i].description[0];
-            rolemodelTextP2.innerText = rolemodels[i].description[1];
-
-            // populate life events
-            let lifeEvents = rolemodels[i].events;
-            for (let i = 0; i < lifeEvents.length; i++) {
-                eventsYear[i].innerText = `${lifeEvents[i].year}:`;
-                eventsText[i].innerText = lifeEvents[i].event;
-            };
-        }
-    }
-}
-*/
