@@ -483,6 +483,12 @@ footer {
     .social-icons a i:hover {
         color: rgb(53 201 204 / 99%);
     }
+
+    #modal-read-more-btn:hover {
+        background-color: rgb(41 75 79);
+        border: none;
+        color: #fff;
+      }
 }
 
     /* Media Queries */
