@@ -14,6 +14,14 @@ const restartQuizBtn = document.getElementById("restart-quiz-btn");
 const answerDiv = document.getElementById("answer-div");
 const answerTieHideDiv = document.getElementById("answer-tie-hide-div");
 
+// declaring consts for Results Modal
+const rmName = document.getElementById("role-model-name");
+const rmImage = document.getElementById("modal-image");
+const roleModelSummary = document.getElementById("role-model-summary");
+const modalReadMoreBtn = document.getElementById("modal-read-more-btn");
+const modal = document.getElementById("results-modal");
+const span = document.getElementsByClassName("close")[0];
+
 
 // declaring other variables
 let maxQuestions = 10;
@@ -249,16 +257,8 @@ function elementCount(arr, element) {
 
 // Results Page Functionality ------------------------------------------------------------------------------ //
 
-const rmName = document.getElementById("role-model-name");
-const rmImage = document.getElementById("modal-image");
-const roleModelSummary = document.getElementById("role-model-summary");
-const modalReadMoreBtn = document.getElementById("modal-read-more-btn");
 
 function showResults(topRolemodel) {
-
-    let modal = document.getElementById("results-modal");
-    let span = document.getElementsByClassName("close")[0];
-
 
     gameDiv.classList.add("hidden");
     welcomeDiv.classList.remove("hidden");
@@ -285,7 +285,6 @@ function showResults(topRolemodel) {
             }
         }
     }
-
 }
 
 // Populates rolemodel heading and text
@@ -300,36 +299,3 @@ function populateRolemodelText(topRolemodel) {
         }
     }
 }
-
-
-
-
-
-
-
-/* 
-function showResults(topRolemodel) {
-    let resultsPage;
-    switch (topRolemodel) {
-        case "rmOne":
-
-            resultsPage = "susan-wojcicki.html";
-            break;
-        case "rmTwo":
-            resultsPage = "annie-easley.html";
-            break;
-        case "rmThree":
-            resultsPage = "nikki-durkin.html";
-            break;
-        case "rmFour":
-            resultsPage = "hedy-lamarr.html";
-            break;
-        case "rmFive":
-            resultsPage = "mary-wilkes.html";
-            break;
-        case "rmSix":
-            resultsPage = "ada-lovelace.html";
-            break;
-    };
-    window.location.href = resultsPage;
-}*/
