@@ -24,5 +24,5 @@
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "HookyQR.beautify",
-   "liveServer.settings.port": 5501
+   "liveServer.settings.port": 5502
 }
