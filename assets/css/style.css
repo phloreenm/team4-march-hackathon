@@ -138,13 +138,23 @@ h1 {
 
 .rm-container {
     background-color: rgba(211, 238, 241, 1);
+    padding: 20px;
 }
 
-.img-profile {
-    height: 300px;
-    width: 300px;
-    margin: auto;
+.rm-container .row {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rm-container img {
+    margin-top: 10px;
+    max-width: 100%;
     margin-bottom: 10px;
+}
+
+#rm-bio-text {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #journey-div h2 {
@@ -153,6 +163,15 @@ h1 {
 
 .event-year {
     font-weight: 800;
+}
+
+.event-year,
+.event {
+    padding: 0;
+}
+
+.event {
+    padding-left: 10px;
 }
 
 
@@ -248,6 +267,7 @@ h1 {
 .btn-choice-tie {
     position: relative;
     background-color: rgba(0, 0, 0, 0);
+    color: #000000;
     border: none;
     width: 200px;
     height: 200px;
@@ -262,6 +282,9 @@ h1 {
     -moz-transition: background-color 0.25s ease-in-out;
     -webkit-transition: background-color 0.25s ease-in-out;
     -o-transition: background-color 0.25s ease-in-out;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
 }
 
 
@@ -342,6 +365,15 @@ h1 {
     font-weight: 700;
   }
 
+  #modal-read-more-btn {
+    display: block;
+    padding: 10px;
+    background-color: rgb(53, 201, 204);
+    border: none;
+    font-family: 'Asap', sans-serif;
+    color: #000000;
+  }
+
   /* The Close Button */
 .close {
     color: rgb(0, 119, 121);
@@ -358,81 +390,13 @@ h1 {
   }
 
 
-/* Hover effects - only on hover devices - NEEDS UPDATING - PLACEHOLDER FOR HOVER EFFECT*/
-
-@media (hover: hover) {
-
-    
-    .btn-choice:hover {
-        background:rgba(4, 251, 255, 0.5);
-    }
-
-    .btn-choice-tie:hover {
-        background-color: rgba(7, 32, 35, 0.8);
-    }
-
-    .game-btn:hover {
-        background-color: rgba(211, 238, 241, 1);
-        color: #333;
-        box-shadow: 0px 0px 6px rgba(7, 32, 35, 0.5);
-        border: none;
-    }
-}
-
-.btn-primary:hover {
-    background-color: rgb(25, 160, 175);
-}
-
-@media only screen and (max-width: 767px) {
-
-    #game-div {
-        width: 85%;
-    }
-
-    #quiz-bg {
-        padding: 30px 0;
-    }
-
-    .modal-content {
-        padding: 20px;
-        padding-top: 10px;
-    }
-
-    .modal-content h2 {
-        margin-bottom: 20px;
-    }
-
-    #modal-image {
-        margin-bottom: 20px;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    #game-div {
-        padding: 2rem 1rem;
-    }
-    
-}
-
-
-/* DOM Manipulation Classes - added in JavaScript */
-
-.selected,
-.selected:hover {
-    background-color: rgb(41 75 79);
-    color: white;
-}
-
-.hidden {
-    display: none;
-}
-
 /* 404 page styling */
 
 .error404_container{
     margin: auto;
     text-align: center;
 }
+
 
   /* footer section */
 
@@ -475,11 +439,70 @@ footer {
     font-size: 1.4rem;
   }
 
-  .social-icons a i:hover {
-    color: rgb(53 201 204 / 99%);
+
+
+    /* Hover effects - only on hover devices */
+
+@media (hover: hover) {
+
+    
+    .btn-choice:hover {
+        background:rgba(108, 253, 255, 0.5);
+    }
+
+    .btn-choice-tie:hover {
+        background-color: rgba(7, 32, 35, 0.8);
+    }
+
+    .game-btn:hover {
+        background-color: rgba(211, 238, 241, 1);
+        color: #333;
+        box-shadow: 0px 0px 6px rgba(7, 32, 35, 0.5);
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: rgb(25, 160, 175);
+    }
+
+    .social-icons a i:hover {
+        color: rgb(53 201 204 / 99%);
+    }
 }
 
+    /* Media Queries */
+    
+    /* Bootstrap Medium Breakpoint devices and below */
+
+@media only screen and (max-width: 767px) {
+
+    #game-div {
+        width: 85%;
+    }
+
+    #quiz-bg {
+        padding: 30px 0;
+    }
+
+    .modal-content {
+        padding: 20px;
+        padding-top: 10px;
+    }
+
+    .modal-content h2 {
+        margin-bottom: 20px;
+    }
+
+    #modal-image {
+        margin-bottom: 20px;
+    }
+}
+
+
+    /* Bootstrap Small Breakpoint devices and below */
+
 @media only screen and (max-width: 575px) {
+
     .footer-text {
         margin-top: 5px;
         margin-bottom: 20px;
@@ -501,4 +524,29 @@ footer {
     line-height: 30px;
     font-size: 1rem;
     }
+
+    #game-div {
+        padding: 2rem 1rem;
     }
+
+    .event {
+        padding-left: 0;
+    }
+
+    .event-year {
+        margin-bottom: 0;
+    }
+    
+}
+
+/* DOM Manipulation Classes - added in JavaScript - keep at bottom of CSS */
+
+.selected,
+.selected:hover {
+    background-color: rgb(41 75 79);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
