@@ -11,7 +11,7 @@ const progressDiv = document.getElementById("progress-div");
 const progressText = document.getElementById("progress-text");
 const progressBar = document.getElementById("progressbar-fg");
 const restartQuizBtn = document.getElementById("restart-quiz-btn");
-const answerDiv = document.getElementById("answer-div");
+const answerDiv = document.getElementById("answer-hide-div");
 const answerTieHideDiv = document.getElementById("answer-tie-hide-div");
 
 // declaring consts for Results Modal
@@ -25,7 +25,6 @@ const span = document.getElementsByClassName("close")[0];
 
 // declaring other variables
 let maxQuestions = 10;
-let username;
 let answerTally = [];
 
 
@@ -249,7 +248,7 @@ function showResults(topRolemodel) {
 
     gameDiv.classList.add("hidden");
     welcomeDiv.classList.remove("hidden");
-    restartQuizBtn.classList.add("hidden")
+    restartQuizBtn.classList.add("hidden");
 
     // open the modal
     modal.style.display = "block";
@@ -262,7 +261,7 @@ function showResults(topRolemodel) {
         if (confirm("This will take you back to the start of the quiz, are you sure?") == true) {
             window.location.reload();
         }
-    }
+    };
 
     // When the user clicks anywhere outside of the modal, close it - with confirm alert
     window.onclick = function (event) {
@@ -271,7 +270,7 @@ function showResults(topRolemodel) {
                 window.location.reload();
             }
         }
-    }
+    };
 }
 
 // Populates rolemodel heading and text
