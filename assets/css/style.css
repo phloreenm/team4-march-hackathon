@@ -11,7 +11,7 @@ body {
 
 .flex-wrapper {
     display: flex;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     flex-direction: column;
     justify-content: space-between;
   }
@@ -141,6 +141,7 @@ h1 {
     border: none;
     color: #fff;
   }
+
   @media (min-width: 768px) {
     .card {
       width: calc(50% - 0.5rem);
@@ -411,6 +412,22 @@ h1 {
     margin: auto;
     text-align: center;
 }
+
+.error404_container button {
+    background-color: rgb(53, 201, 204);
+    padding: 0.5rem;
+    border-radius: 3px;
+    width: 150px;
+    border: none;
+    font-family: 'Asap', sans-serif;
+    color: #000000;
+  }
+
+  .error404_container button:hover {
+    background-color: rgb(41 75 79);
+    border: none;
+    color: #fff;
+  }
 
 
   /* footer section */
