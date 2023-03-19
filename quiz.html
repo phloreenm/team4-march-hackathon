@@ -17,18 +17,21 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.webp"  style="max-width: 50%;" alt="highheels icon">
+                    <img src="assets/images/logo.webp" style="max-width: 50%;" alt="highheels icon">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
 
-                            <a class="nav-link active" href="quiz.html">Quiz</a>
+                        <a class="nav-link active" href="quiz.html">Quiz</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Learn More About
                             </a>
                             <ul class="dropdown-menu">
@@ -38,7 +41,7 @@
                                 <li><a class="dropdown-item" href="mary-wilkes.html">Mary Wilkes</a></li>
                                 <li><a class="dropdown-item" href="nikki-durkin.html">Nikki Durkin</a></li>
                                 <li><a class="dropdown-item" href="susan-wojcicki.html">Susan Wojcicki</a></li>
-                                
+
                             </ul>
                         </li>
 
@@ -111,8 +114,29 @@
         </div>
     </div>
 
-     <!-- Footer -->
-     <footer class="bg-body-tertiary container-fluid">
+    <!-- The Modal -->
+    <div id="results-modal" class="modal-results">
+
+        <!-- Modal content -->
+        <div class="modal-content container">
+            <span class="close">&times;</span>
+            <h2 class="text-center">Your Role Model is... <span id="role-model-name">name here</span></h2>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <p id="role-model-summary">Role Model summary text</p>
+
+                    <a href="" class="btn btn-primary btn-sm card-btn" id="modal-read-more-btn">Read More</a>
+                </div>
+                <div class="col order-first order-md-last"><img src="assets/images/nikki_durkin.jpg"
+                        alt="Image of Nikki Durkin" id="modal-image"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-body-tertiary container-fluid">
         <div class="row">
             <div class="col-6">
                 <div class="footer-text">
@@ -122,26 +146,27 @@
             <div class="col-6">
                 <ul class="social-icons">
                     <li>
-                      <a href="https://www.facebook.com/" target="_blank" rel="nofollow" aria-label="Facebook">
-                        <i class="fab fa-facebook"></i>
-                      </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="nofollow" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/" target="_blank" rel="nofollow" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                      </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="nofollow" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </li>
                     <li>
-                      <a href="https://twitter.com/" target="_blank" rel="nofollow" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                      </a>
+                        <a href="https://twitter.com/" target="_blank" rel="nofollow" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </li>
                     <li>
-                      <a href="https://github.com/phloreenm/team4-march-hackathon" target="_blank" rel="nofollow" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                      </a>
+                        <a href="https://github.com/phloreenm/team4-march-hackathon" target="_blank" rel="nofollow"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </li>
-                  </ul>
+                </ul>
             </div>
         </div>
     </footer>

@@ -14,6 +14,14 @@ const restartQuizBtn = document.getElementById("restart-quiz-btn");
 const answerDiv = document.getElementById("answer-div");
 const answerTieHideDiv = document.getElementById("answer-tie-hide-div");
 
+// declaring consts for Results Modal
+const rmName = document.getElementById("role-model-name");
+const rmImage = document.getElementById("modal-image");
+const roleModelSummary = document.getElementById("role-model-summary");
+const modalReadMoreBtn = document.getElementById("modal-read-more-btn");
+const modal = document.getElementById("results-modal");
+const span = document.getElementsByClassName("close")[0];
+
 
 // declaring other variables
 let maxQuestions = 10;
@@ -50,7 +58,9 @@ function startGame() {
 
     // restart button - reload page
     restartQuizBtn.addEventListener('click', function () {
-        window.location.reload();
+        if (confirm("This will take you back to the start of the quiz, are you sure?") == true) {
+            window.location.reload();
+        }
     });
 }
 
@@ -247,29 +257,45 @@ function elementCount(arr, element) {
 
 // Results Page Functionality ------------------------------------------------------------------------------ //
 
-// Reveal Results - links to rolemodel pages
-function showResults(topRolemodel) {
-    let resultsPage;
-    switch (topRolemodel) {
-        case "rmOne":
 
-            resultsPage = "susan-wojcicki.html";
-            break;
-        case "rmTwo":
-            resultsPage = "annie-easley.html";
-            break;
-        case "rmThree":
-            resultsPage = "nikki-durkin.html";
-            break;
-        case "rmFour":
-            resultsPage = "hedy-lamarr.html";
-            break;
-        case "rmFive":
-            resultsPage = "mary-wilkes.html";
-            break;
-        case "rmSix":
-            resultsPage = "ada-lovelace.html";
-            break;
-    };
-    window.location.href = resultsPage;
+function showResults(topRolemodel) {
+
+    gameDiv.classList.add("hidden");
+    welcomeDiv.classList.remove("hidden");
+    restartQuizBtn.classList.add("hidden")
+
+    // open the modal
+    modal.style.display = "block";
+
+    // populate rolemodel heading and text
+    populateRolemodelText(topRolemodel);
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        if (confirm("This will take you back to the start of the quiz, are you sure?") == true) {
+            window.location.reload();
+        }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            if (confirm("This will take you back to the start of the quiz, are you sure?") == true) {
+                window.location.reload();
+            }
+        }
+    }
+}
+
+// Populates rolemodel heading and text
+function populateRolemodelText(topRolemodel) {
+    for (let i = 0; i < rolemodels.length; i++) {
+        if (rolemodels[i].code === topRolemodel) {
+            rmName.innerText = rolemodels[i].name;
+            rmImage.src = rolemodels[i].img;
+            rmImage.alt = rolemodels[i].alt;
+            roleModelSummary.innerText = rolemodels[i].summary;
+            modalReadMoreBtn.href = rolemodels[i].bioPage;
+        }
+    }
 }
