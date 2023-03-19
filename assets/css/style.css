@@ -181,7 +181,7 @@ h1 {
 }
 
 #progressbar-fg {
-    background-color: rgb(25, 160, 175);
+    background-color: rgb(0, 119, 121);
     z-index: 2;
     width: 10%;
 }
@@ -213,9 +213,6 @@ h1 {
     -o-transition: all 0.25s ease-in-out;
 }
 
-.btn-choice:hover {
-    background:rgba(53,201,204,0.3);
-}
 
 #answer-tie-div {
     display: flex;
@@ -287,9 +284,10 @@ h1 {
 /* Hover effects - only on hover devices - NEEDS UPDATING - PLACEHOLDER FOR HOVER EFFECT*/
 
 @media (hover: hover) {
+
+    
     .btn-choice:hover {
-        background-color: rgb(25, 160, 175);
-        color: white;
+        background:rgba(4, 251, 255, 0.5);
     }
 
     .btn-choice-tie:hover {
