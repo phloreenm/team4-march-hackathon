@@ -57,6 +57,7 @@ h1 {
 .btn-jumbotron {
     background-color: rgba(53, 201, 204);
     color: rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000;
     font-weight: 700;
     margin-top: 2rem;
     padding: 1rem;
