@@ -56,7 +56,7 @@ function startGame() {
     addQuestionContent(0);
     handleAnswer();
 
-    // restart button - reload page
+    // restart button - reload page - with confirm alert
     restartQuizBtn.addEventListener('click', function () {
         if (confirm("This will take you back to the start of the quiz, are you sure?") == true) {
             window.location.reload();
@@ -140,7 +140,6 @@ function logRolemodels(choice) {
             answerTally.push(answer.code);
         }
     });
-    console.log(answerTally);
 }
 
 // re-enable the buttons after question answered
@@ -157,18 +156,10 @@ function findTopRolemodel() {
     for (let i = 0; i < rolemodels.length; i++) {
         rolemodels[i].score = elementCount(answerTally, rolemodels[i].code);
     }
-    console.log(rolemodels[0].name + ": Score: " + rolemodels[0].score)
-    console.log(rolemodels[1].name + ": Score: " + rolemodels[1].score)
-    console.log(rolemodels[2].name + ": Score: " + rolemodels[2].score)
-    console.log(rolemodels[3].name + ": Score: " + rolemodels[3].score)
-    console.log(rolemodels[4].name + ": Score: " + rolemodels[4].score)
-    console.log(rolemodels[5].name + ": Score: " + rolemodels[5].score)
 
     // Checks for a tie
     let topRolemodelArray = [];
-    console.log(topRolemodelArray)
     checkForTie(topRolemodelArray);
-    console.log("Top Role Model Array after checkForTie: " + topRolemodelArray)
 
     // if not tied reveal results, if tied run tie breaker & reveal results
     let topRolemodel;
@@ -217,11 +208,9 @@ function checkForTie(topRolemodelArray) {
     for (let i = 0; i < rolemodels.length; i++) {
         scoreArray.push(rolemodels[i].score);
     }
-    console.log("scoreArray: " + scoreArray);
 
     // calculate the maximum number of times any rolemodel code appears
     let maxRolemodelScore = Math.max(...scoreArray);
-    console.log("maxRolemodelScore: " + maxRolemodelScore)
 
     // create an array of the winning rolemodels
     for (let i = 0; i < rolemodels.length; i++) {
@@ -229,7 +218,6 @@ function checkForTie(topRolemodelArray) {
             topRolemodelArray.push(rolemodels[i].code);
         }
     }
-    console.log("Top Role Model Array inside checkForTie: " + topRolemodelArray)
 }
 
 // Reveals Tie Breaker
@@ -257,7 +245,6 @@ function elementCount(arr, element) {
 
 // Results Page Functionality ------------------------------------------------------------------------------ //
 
-
 function showResults(topRolemodel) {
 
     gameDiv.classList.add("hidden");
@@ -270,14 +257,14 @@ function showResults(topRolemodel) {
     // populate rolemodel heading and text
     populateRolemodelText(topRolemodel);
 
-    // When the user clicks on <span> (x), close the modal
+    // When the user clicks on <span> (x), close the modal - with confirm alert
     span.onclick = function () {
         if (confirm("This will take you back to the start of the quiz, are you sure?") == true) {
             window.location.reload();
         }
     }
 
-    // When the user clicks anywhere outside of the modal, close it
+    // When the user clicks anywhere outside of the modal, close it - with confirm alert
     window.onclick = function (event) {
         if (event.target == modal) {
             if (confirm("This will take you back to the start of the quiz, are you sure?") == true) {
