@@ -11,7 +11,7 @@ const progressDiv = document.getElementById("progress-div");
 const progressText = document.getElementById("progress-text");
 const progressBar = document.getElementById("progressbar-fg");
 const restartQuizBtn = document.getElementById("restart-quiz-btn");
-const answerDiv = document.getElementById("answer-div");
+const answerDiv = document.getElementById("answer-hide-div");
 const answerTieHideDiv = document.getElementById("answer-tie-hide-div");
 
 // declaring consts for Results Modal
