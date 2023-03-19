@@ -1,47 +1,39 @@
-# NAME OF APPLICATION
+# *Follow her Footsteps*
+
+To celebrate International Women's Day, this month's Code Institute hackathon is paying tribute to Women in the Tech Industry. 
+
+Out of the main challenges faced by women in tech on a daily basis, we decided to focus our project around the theme of 'Lack of Representation'. It is true that women are often under-represented in technical roles, and more specifically, there are women who are completely unheard of by a large percentage of the population. These women have pushed the boundaries of science, gone where no coder or computer scientist had ever gone before, and paved the way for future generations with ground-breaking innovations that no-one has ever heard about. 
+
+We are celebrating the lives of amazing women who have changed the face of technology. Welcome to [Follow her Footsteps](https://phloreenm.github.io/team4-march-hackathon/)
 
 ![Mock-up]()
 
-#### **By .........**
-[Click here to view the live web application]()
+## Design, Layout & Structure
 
-INTRO TEXT
+Having agreed on the topic of under-represented women, we decided to build a website dedicated to the lives and achievements of six important women in the tech industry. The homepage gives a summary of all six women, and there there is a detailed overview page of each woman's life and points of interest.
 
-- - -
-## Table of Contents
+To take even further inspiration from these women, there is then a quiz page where you can answer a series of questions to find out who would be your ideal female tech role model to follow and aspire to out of the six women promoted on our site.
 
+### **Wireframes**
 
-- - -
-## Project Development & Planning
+We designed two wireframes for desktop at the start of the project. One for the main homepage, and a second one for the role model quiz.
 
-- - -
-### Project Goals
+![Homepage](assets/images/readme/homepage.png)
+![Quiz Page](assets/images/readme/quiz-page.png)
 
+### **Colour Scheme**
 
-- - -
-### User Stories
+Originally we wanted to keep the color scheme very classic and simple using black and white images. Then to add a hint of color, we introduced some additional tones into the overall site color palette.
 
+![Color Scheme](assets/images/readme/color-palette.png)
 
-- - -
-### Design, Layout & Structure
+### **Fonts**
 
+Using Google Fonts, we selected 'Merriweather Sans' for the Header font and 'Asap' for the body. These default to Sans Serif where not available.
 
-#### **Wireframes**
+![Merriweather Sans](assets/images/readme/merriweather-sans.png)
+![ASAP](assets/images/readme/asap.png)
 
-   
-- - -
-#### **Structure**
-
-
-- - -
-#### **Colour**
-
-
-- - -
-#### **Fonts**
-
-
-- - -
 ## Technologies Used
 
 ### Languages
@@ -58,8 +50,8 @@ INTRO TEXT
     * Used to store the project code after being created in GitPod / Git
 * [Gitpod](https://www.gitpod.io/)
     * Used to create, edit & preview the project's code
-* [Figma](https://www.figma.com/)
-    * Used to develop the wireframes in to a full mockup including colours, fonts, proportions etc
+* [Balsamiq](https://balsamiq.com/wireframes/?gclid=CjwKCAjw5dqgBhBNEiwA7PryaFdVDfqdVacxGNy0D7jsTCtYybA_icJYA4sW_uakR7qfCaBHEM_0XxoCNq4QAvD_BwE)
+    * Used to develop the wireframes 
 * [Google Fonts](https://fonts.google.com/)
     * Used to select & import the fonts to the project (Poppins & Fira Sans)
 * [Font Awesome](https://fontawesome.com/)
@@ -68,16 +60,79 @@ INTRO TEXT
     * Used to further optimise the images for the site and reduce file size
 * [ezGIF](https://ezgif.com/)
     * Creating GIFs for the README
-* [Techsini Mockup](https://techsini.com/multi-mockup/)
+* [AmIResponsive](https://ui.dev/amiresponsive)
     * Creating the mockup images for the README
 * [Favicon.io](https://favicon.io/favicon-converter/)
     * Used to create and add the favicon to the browser tab
 
-- - -
 ## Features
 
+### Navigation Bar
 
-- - -
+The navigation bar contains a bespoke logo for the site on the left, which is also a link back to the homepage from any point across the site. On the right, the user can access the role model quiz, or each of the six role model's information pages. 
+
+This navbar reduces down into a hamburger menu for tablet and mobile devices.
+
+![Navbar](assets/images/readme/)
+
+### Callout 
+
+Filling the full view height of the page is an initial hero-image and our Callout text describing the website. There is also a direct link from the hero-image to start the quiz.
+
+![Callout](assets/images/readme/callout.png)
+
+### About
+
+Below the callout is the About section describing the reasoning behind our website and its contents.
+
+![About](assets/images/readme/about.png)
+
+### Meet the Role Models
+
+Below the About section is an introduction card about each of the six featured women on our site. You can see a black and white profile image, and summary about each person, and a link to click through to a more detailed summary of their life.
+
+In desktop and tablet view, there are two cards displayed on each row. For mobiles, only one card is shown per row. 
+
+![Role Models Introduction - desktop](assets/images/readme/rm-intros.png)
+![Role Models Introduction - mobile](assets/images/readme/rm-intros-mobile.png)
+
+### Footer
+
+The footer contains ficticious social media links, and a link to the team's GitHub repository. The footer condenses down into two rows for mobile devices. 
+
+![Footer - desktop](assets/images/readme/footer-desktop.png)
+![Footer - mobile](assets/images/readme/footer-mobile.png)
+
+### Role Models
+
+There is a full page of information dedicated to each of the sox featured role models on our site. This is broken down into three sections:
+* A profile picture
+* A detailed story of her life
+* A timeline of important events
+
+![Profile Picture](assets/images/readme/rm-pic.png)
+![Life Story](assets/images/readme/life.png)
+![Timeline](assets/images/readme/journey.png)
+
+### Role Model Quiz
+
+You can answer a series of 10 questions to discover which female role model you are most suited to aspire to, and follow in their footsteps. 
+
+![quiz Start Page](assets/images/readme/quiz-start.png)
+
+For each of the quiz questions, you have to choose an answer that you feel most closely relates to your personal situation or feelings.
+
+![quiz Start Page](assets/images/readme/quiz-questions.png)
+
+As you go along, the site calculates which of the six role models you can relate to more closely. If, once you get to the end, you are similar to more than one role model, you must play the tie breaker round to narrow it down.
+
+![quiz Start Page](assets/images/readme/quiz-tie.png)
+
+Once you have answered all ten questions, and a possible tie-breaker, the site pairs you up with your ideal role model and gives you your results. 
+
+![quiz Start Page](assets/images/readme/quiz-result.png)
+
+
 ### Future Features
 
 
@@ -97,7 +152,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 4. Click 'Save'
 5. A live link will be displayed when published successfully. 
 
-[The live link can be found here]()
+[The live link can be found here](https://phloreenm.github.io/team4-march-hackathon/quiz.html)
 
 ### Forking the GitHub Repository
 
@@ -129,10 +184,10 @@ The project will now be cloned locally for you to use.
 
 * Susan Wojcicki:  [Wikipedia](https://en.wikipedia.org/wiki/Susan_Wojcicki)
 * Annie Easley:  [NASA](https://www.nasa.gov/feature/annie-easley-computer-scientist) | [Wikipedia](https://en.wikipedia.org/wiki/Annie_Easley)
-* Nikki Durkin:  [Medium](https://nikkidurkin.medium.com/)
-* Hedy Lamarr:  [womenshistory.org](https://www.womenshistory.org/education-resources/biographies/hedy-lamarr)
-* Mary Wilkes:  [Wikipedia](https://en.wikipedia.org/wiki/Mary_Allen_Wilkes) | [Code Savvy](https://www.codesavvy.org/post/women-in-stem-mary-allen-wilkes)
-* Ada Lovelace:  [Britannica](https://www.britannica.com/biography/Ada-Lovelace) | [biography.com](https://www.biography.com/scholars-educators/ada-lovelace) | [BBC Newsround](https://www.bbc.co.uk/newsround/49960544) | [Time Graphics](https://time.graphics/line/90097 ) 
+* Nikki Durkin:  [Medium](https://nikkidurkin.medium.com/) | [The Daily Mail](https://www.dailymail.co.uk/femail/article-3835677/Former-tech-wonder-kid-99dresses-founder-Nikki-Durkin-reveals-lessons-learnt-losing-all.html)
+* Hedy Lamarr:  [womenshistory.org](https://www.womenshistory.org/education-resources/biographies/hedy-lamarr) | [globalcitizen.org](https://www.globalcitizen.org/en/content/hedy-lamarr-genius-only-seen-for-beauty/#:~:text=She's%20also%20the%20inventor%20of,anything%20other%20than%20her%20beauty.)
+* Mary Wilkes:  [Wikipedia](https://en.wikipedia.org/wiki/Mary_Allen_Wilkes) | [Code Savvy](https://www.codesavvy.org/post/women-in-stem-mary-allen-wilkes) | [ethw.org](https://ethw.org/Mary_Allen_Wilkes#:~:text=Wilkes%20was%20the%20first%20person,The%20Washington%20University%20in%20St.)
+* Ada Lovelace:  [Britannica](https://www.britannica.com/biography/Ada-Lovelace) | [biography.com](https://www.biography.com/scholars-educators/ada-lovelace) | [BBC Newsround](https://www.bbc.co.uk/newsround/49960544) | [Time Graphics](https://time.graphics/line/90097 ) | [Doodle Learning](https://doodlelearning.com/post/mathematicians-who-changed-the-world-ada-lovelace-1815-1852#:~:text=Augusta%20Ada%20King%2DNoel%2C%20Countess,had%20applications%20beyond%20pure%20calculations.)
 
 
 - - -
@@ -156,5 +211,14 @@ The project will now be cloned locally for you to use.
 - - -
 ### Acknowledgements
 
+Thanks to the amazing collaborative efforts from the following students at the Code Institute for their passion, creativity, team work and drive. Women and men alike would be proud of this website all over the world.
+
+Collaborators:
+
+* [Emma Hewson](https://github.com/emmahewson)
+* [Florin Maracine](https://github.com/phloreenm)
+* [Karolis Petrauskas](https://github.com/kpetrauskas92)
+* [Kelly Hutchison](https://github.com/quiltingcode)
+
 - - -
-- - -
+
