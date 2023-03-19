@@ -28,6 +28,20 @@ body {
     margin-left: auto;
 }
 
+.nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    background-color: aqua;
+    border-radius: 4px;
+}
+
+.dropdown-menu li {
+    line-break: normal;
+}
+
 /* Callout Container */
 .callout-container {
     height: 100vh;
