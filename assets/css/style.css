@@ -213,6 +213,10 @@ h1 {
     -o-transition: all 0.25s ease-in-out;
 }
 
+.btn-choice:hover {
+    background:rgba(53,201,204,0.3);
+}
+
 #answer-tie-div {
     display: flex;
     flex-wrap: wrap;
@@ -298,6 +302,10 @@ h1 {
         box-shadow: 0px 0px 6px rgba(7, 32, 35, 0.5);
         border: none;
     }
+}
+
+.btn-primary:hover {
+    background-color: rgb(25, 160, 175);
 }
 
 
