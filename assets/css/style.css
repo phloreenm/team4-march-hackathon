@@ -246,6 +246,7 @@ h1 {
 .btn-choice {
     background-color: rgb(255, 255, 255);
     border-color: rgba(4, 87, 97, 0.5);
+    color: #000000;
     font-weight: 400;
     width: 100%;
     height: 100%;
