@@ -31,7 +31,7 @@ const questions = [{
     questionNumber: 2,
     questionText: "Choose a passion…",
     answers: [{
-            answerText: "Encouraging women and minority students in to STEM careers",
+            answerText: "Encouraging minority students in to STEM careers",
             code: "rmTwo"
         },
         {
@@ -145,7 +145,7 @@ const questions = [{
 },
 {
     questionNumber: 6,
-    questionText: "Choose a quote…",
+    questionText: "Choose the quote that you most relate to…",
     answers: [{
             answerText: "'What's important is that I do my job really well, that I build great products and that I'm a great leader.'",
             code: "rmOne"
@@ -163,7 +163,7 @@ const questions = [{
             code: "rmFive"
         },
         {
-            answerText: "'Forget this world and all its troubles and, if possible, its multitudinous Charlatans — everything, in short, but the Enchantress of Numbers.'",
+            answerText: "'Forget this world and all its troubles... everything, in short, but the Enchantress of Numbers.'",
             code: "rmSix"
         },
         {
@@ -261,7 +261,7 @@ const questions = [{
 },
 {
     questionNumber: 10,
-    questionText: "Choose another quote…",
+    questionText: "Choose another quote that you can relate to…",
     answers: [{
             answerText: "'Code is just a tool to create with, not the end goal.'",
             code: "rmThree"
@@ -275,7 +275,7 @@ const questions = [{
             code: "rmSix"
         },
         {
-            answerText: "'We had the quaint notion at the time that software should be completely, absolutely free of bugs. Unfortunately it's a notion that never really caught on.'",
+            answerText: "'We had the quaint notion at the time that software should be completely, absolutely free of bugs.'",
             code: "rmFive"
         },
         {
@@ -283,7 +283,7 @@ const questions = [{
             code: "rmOne"
         },
         {
-            answerText: "“Don't give up on it. Just stick with it. Don't listen to people who always tell you it's hard, and walk away from it.”",
+            answerText: "'Don't give up on it. Just stick with it.'",
             code: "rmTwo"
         },
     ]

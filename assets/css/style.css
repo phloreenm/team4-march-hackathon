@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:wghtAsap:wght@300;500;600;700&family=Merriweather+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500;700&family=Merriweather+Sans:wght@800&display=swap');
 
 html,
 body {
@@ -44,13 +44,14 @@ h1 {
 
 .jumbotron {
     color: rgb(53 201 204 / 99%);
+    text-shadow: 0 0 2px #000000;
+    padding: 2rem;
     /* margin-bottom: 20rem; */
 
 }
 
-.jumbotron-text {
-    color: rgb(41 75 79);
-    font-weight: 700;
+.jumbotron h2 {
+    color: rgb(255, 255, 255);
 }
 
 .btn-jumbotron {
@@ -58,6 +59,11 @@ h1 {
     color: white;
     font-weight: 700;
     margin-top: 2rem;
+    padding: 1rem;
+}
+
+.btn-jumbotron:hover {
+    background-color: rgba(0, 0, 0, 0.795);
 }
 
 .about-container {
@@ -92,7 +98,7 @@ h1 {
 }
 
 .card-btn {
-    background-color: rgb(53 201 204 / 50%);;
+    background-color: rgb(53 201 204 / 50%);
     border: none;
     font-family: 'Asap', sans-serif;
     color: #333;
@@ -126,7 +132,92 @@ h1 {
 
 
 /* Quiz */
-/* Tie Break Images */
+
+#quiz-bg {
+    padding: 50px 0;
+    min-height: 89%;
+}
+
+.game-btn {
+    background-color: rgb(41 75 79);
+    border: none;
+    font-family: 'Asap', sans-serif;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+#welcome-div h1,
+#question-text,
+#answer-tie-hide-div p {
+    margin-bottom: 20px;
+}
+
+#game-div {
+    background: rgb(69,124,130);
+    background: linear-gradient(0deg, rgba(69,124,130,0.9) 6%, rgba(53,201,204,0.9) 100%);
+    width: 80%;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+#progress-div {
+    width: 100%;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.progressbar {
+    height: 15px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#progressbar-bg {
+    width: 100%;
+    background-color: rgb(255 255 255 / 90%);
+}
+
+#progressbar-fg {
+    background-color: rgb(25, 160, 175);
+    z-index: 2;
+    width: 10%;
+}
+
+#progress-text {
+    font-weight: 500;
+}
+
+#question-text {
+    margin-bottom: 30px;
+}
+
+#restart-btn-div {
+    margin-top: 50px;
+}
+
+
+.btn-choice {
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(4, 87, 97, 0.5);
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+#answer-tie-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
 .btn-choice-tie {
     position: relative;
@@ -134,6 +225,7 @@ h1 {
     border: none;
     width: 200px;
     height: 200px;
+    border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -160,6 +252,8 @@ h1 {
     border-radius: inherit;
 }
 
+/* Tie Break Images */
+
 #tie-rm1 {
     background-image: url("../images/tb_susan.jpg");
 }
@@ -185,29 +279,24 @@ h1 {
 }
 
 
-/* Button Styling - NEEDS UPDATING - PLACEHOLDER FOR HOVER EFFECT */
-
-.btn-choice,
-#restart-quiz-btn,
-#start-quiz-btn {
-    background-color: blanchedalmond;
-    transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-}
-
 
 /* Hover effects - only on hover devices - NEEDS UPDATING - PLACEHOLDER FOR HOVER EFFECT*/
 
 @media (hover: hover) {
-    .btn-choice:hover,
-    #restart-quiz-btn:hover,
-    #start-quiz-btn:hover {
-        background-color: pink;
+    .btn-choice:hover {
+        background-color: rgb(25, 160, 175);
+        color: white;
     }
+
     .btn-choice-tie:hover {
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(7, 32, 35, 0.8);
+    }
+
+    .game-btn:hover {
+        background-color: rgba(211, 238, 241, 1);
+        color: #333;
+        box-shadow: 0px 0px 6px rgba(7, 32, 35, 0.5);
+        border: none;
     }
 }
 
@@ -216,7 +305,8 @@ h1 {
 
 .selected,
 .selected:hover {
-    background-color: #ff0000;
+    background-color: rgb(41 75 79);
+    color: white;
 }
 
 .hidden {
@@ -230,36 +320,25 @@ h1 {
     text-align: center;
 }
 
-.error404_container, img{
-    max-width: 80%;
-}
-
-
   /* footer section */
 
-
 footer {
-
     bottom: 0;
     width: 100%;
     height: 60px;
 }
 
-  footer{
-    margin-top: 1rem;
-  }
-
-  .footer-text {
-    text-align: center;
+.footer-text {
     margin-top: 20px;
-    margin-bottom: 10px;
+    text-align: center;
     font-size: 14px;
-    color: #666;
+    color: #000000;
   }
 
   /* social icons styling */
 
 .social-icons {
+    margin-top: 20px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -279,10 +358,22 @@ footer {
     line-height: 40px;
     border-radius: 50%;
     color: #fff;
-    background-color: #333;
-    font-size: 20px;
+    background-color: #000000;
+    font-size: 1.4rem;
   }
 
   .social-icons a i:hover {
     color: rgb(53 201 204 / 99%);
 }
+
+@media only screen and (max-width: 600px) {
+    .social-icons li:not(:last-child) {
+    margin-right: 10px;
+    }
+    .social-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem;
+    }
+    }
