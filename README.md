@@ -6,6 +6,7 @@ Out of the main challenges faced by women in tech on a daily basis, we decided t
 
 We are celebrating the lives of amazing women who have changed the face of technology. Welcome to [Follow her Footsteps!](https://phloreenm.github.io/team4-march-hackathon/)
 
+
 [Live wesbite](https://phloreenm.github.io/team4-march-hackathon/index.html)
 
 
