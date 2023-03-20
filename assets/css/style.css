@@ -221,6 +221,17 @@ h1 {
     margin: 0 auto;
 }
 
+.game-btn:hover {
+    background-color: rgba(211, 238, 241, 1);
+    color: #333;
+    box-shadow: 0px 0px 6px rgba(7, 32, 35, 0.5);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(25, 160, 175);
+}
+
 #progress-div {
     width: 100%;
     position: relative;
@@ -486,17 +497,6 @@ footer {
 
     .btn-choice-tie:hover {
         background-color: rgba(7, 32, 35, 0.8);
-    }
-
-    .game-btn:hover {
-        background-color: rgba(211, 238, 241, 1);
-        color: #333;
-        box-shadow: 0px 0px 6px rgba(7, 32, 35, 0.5);
-        border: none;
-    }
-
-    .btn-primary:hover {
-        background-color: rgb(25, 160, 175);
     }
 
     .social-icons a i:hover {
