@@ -1,12 +1,13 @@
-# *Follow her Footsteps*
+![Mock-up](/assets/images/readme/mockup-banner.jpg)
 
 To celebrate International Women's Day, this month's Code Institute hackathon is paying tribute to Women in the Tech Industry. 
 
 Out of the main challenges faced by women in tech on a daily basis, we decided to focus our project around the theme of 'Lack of Representation'. It is true that women are often under-represented in technical roles, and more specifically, there are women who are completely unheard of by a large percentage of the population. These women have pushed the boundaries of science, gone where no coder or computer scientist had ever gone before, and paved the way for future generations with ground-breaking innovations that no-one has ever heard about. 
 
-We are celebrating the lives of amazing women who have changed the face of technology. Welcome to [Follow her Footsteps](https://phloreenm.github.io/team4-march-hackathon/)
+We are celebrating the lives of amazing women who have changed the face of technology. Welcome to [Follow her Footsteps!](https://phloreenm.github.io/team4-march-hackathon/)
 
-![Mock-up]()
+[Live wesbite](https://follow-her-foosteps.netlify.app/)
+
 
 ## Design, Layout & Structure
 
@@ -71,9 +72,12 @@ Using Google Fonts, we selected 'Merriweather Sans' for the Header font and 'Asa
 
 The navigation bar contains a bespoke logo for the site on the left, which is also a link back to the homepage from any point across the site. On the right, the user can access the role model quiz, or each of the six role model's information pages. 
 
+![Desktop View](assets/images/readme/navbar-d.png)
+
 This navbar reduces down into a hamburger menu for tablet and mobile devices.
 
-![Navbar](assets/images/readme/)
+![Navbar mobile view - open](assets/images/readme/navbar-m-c.png)
+![Navbar mobile view - open](assets/images/readme/navbar-m-o.png)
 
 ### Callout 
 
