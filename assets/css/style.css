@@ -11,7 +11,6 @@ body {
 
 .flex-wrapper {
     display: flex;
-    /* min-height: 100vh; */
     flex-direction: column;
     justify-content: space-between;
   }
@@ -20,7 +19,6 @@ body {
 
 .navbar-collapse {
     flex-basis: 100%;
-    /* flex-grow: 1; */
     align-items: center;
 }
 
@@ -43,6 +41,7 @@ body {
 }
 
 /* Callout Container */
+
 .callout-container {
     height: 100vh;
     background-image: url(../images/hero-image.webp); 
@@ -60,8 +59,6 @@ h1 {
     color: rgb(53 201 204 / 99%);
     text-shadow: 0 0 2px #000000;
     padding: 2rem;
-    /* margin-bottom: 20rem; */
-
 }
 
 .jumbotron h2 {
@@ -87,6 +84,8 @@ h1 {
     background: linear-gradient(180deg, rgba(69,124,130,1) 3%, rgba(255,255,255,1) 100%);
 }
 
+/* Card Container */
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +93,7 @@ h1 {
     padding: 1rem;
   }
   
-  .card {
+.card {
     position: relative;
     width: 100%;
     margin-bottom: 1rem;
@@ -103,25 +102,25 @@ h1 {
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
   }
   
-  .card-image {
+.card-image {
     width: 100%;
     padding: 1rem;
   }
   
-  .card-block {
+.card-block {
     padding: 1rem;
   }
   
-  .card-title {
+.card-title {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
   }
   
-  .card-text {
+.card-text {
     padding-bottom: 1rem;
   }
   
-  .container_btn {
+.container_btn {
     display: block;
     width: 100%;
     position: absolute;
@@ -136,15 +135,15 @@ h1 {
     color: #000000;
   }
 
-  .container_btn:hover {
+.container_btn:hover {
     background-color: rgb(41 75 79);
     border: none;
     color: #fff;
   }
 
-  @media (min-width: 768px) {
-    .card {
-      width: calc(50% - 0.5rem);
+    @media (min-width: 768px) {
+        .card {
+        width: calc(50% - 0.5rem);
     }
   }
   
@@ -355,6 +354,7 @@ h1 {
 }
 
 /* The Modal (background) */
+
 .modal-results {
     display: none;
     position: fixed;
@@ -369,6 +369,7 @@ h1 {
   }
   
   /* Modal Content */
+
   .modal-content {
     background-color: rgb(232, 252, 254);
     border-radius: 25px;
@@ -402,6 +403,7 @@ h1 {
   }
 
   /* The Close Button */
+
 .close {
     color: rgb(0, 119, 121);
     font-size: 28px;
@@ -417,7 +419,7 @@ h1 {
   }
 
 
-/* 404 page styling */
+/* 404 page */
 
 .error404_container{
     margin: auto;
@@ -434,14 +436,14 @@ h1 {
     color: #000000;
   }
 
-  .error404_container button:hover {
+.error404_container button:hover {
     background-color: rgb(41 75 79);
     border: none;
     color: #fff;
   }
 
 
-  /* footer section */
+/* footer section */
 
 footer {
     bottom: 0;
@@ -455,7 +457,7 @@ footer {
     color: #000000;
   }
 
-  /* social icons styling */
+/* social icons styling */
 
 .social-icons {
     margin-top: 20px;
@@ -466,11 +468,11 @@ footer {
     margin-top: 1rem;
   }
 
-  .social-icons li:not(:last-child) {
+.social-icons li:not(:last-child) {
     margin-right: 20px;
   }
 
-  .social-icons a {
+.social-icons a {
     display: inline-block;
     text-align: center;
     width: 40px;
@@ -484,7 +486,7 @@ footer {
 
 
 
-    /* Hover effects - only on hover devices */
+/* Hover effects - only on hover devices */
 
 @media (hover: hover) {
 
