@@ -6,7 +6,7 @@ Out of the main challenges faced by women in tech on a daily basis, we decided t
 
 We are celebrating the lives of amazing women who have changed the face of technology. Welcome to [Follow her Footsteps!](https://phloreenm.github.io/team4-march-hackathon/)
 
-[Live wesbite](https://follow-her-foosteps.netlify.app/)
+[Live wesbite](https://phloreenm.github.io/team4-march-hackathon/)
 
 
 ## Design, Layout & Structure
@@ -156,7 +156,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 4. Click 'Save'
 5. A live link will be displayed when published successfully. 
 
-[The live link can be found here](https://phloreenm.github.io/team4-march-hackathon/quiz.html)
+[The live link can be found here](https://phloreenm.github.io/team4-march-hackathon/)
 
 ### Forking the GitHub Repository
 
