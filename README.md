@@ -6,7 +6,7 @@ Out of the main challenges faced by women in tech on a daily basis, we decided t
 
 We are celebrating the lives of amazing women who have changed the face of technology. Welcome to [Follow her Footsteps!](https://phloreenm.github.io/team4-march-hackathon/)
 
-[Live wesbite](https://follow-her-foosteps.netlify.app/)
+[Live wesbite](https://phloreenm.github.io/team4-march-hackathon/index.html)
 
 
 ## Design, Layout & Structure
@@ -17,7 +17,7 @@ To take even further inspiration from these women, there is then a quiz page whe
 
 ### **Wireframes**
 
-We designed two wireframes for desktop at the start of the project. One for the main homepage, and a second one for the role model quiz.
+We designed two wireframes for desktop at the start of the project. One for the main homepage, and a second one for the role model quiz. The final site varies slightly from the wireframes due to developments that occured during the creation process.
 
 ![Homepage](assets/images/readme/homepage.png)
 ![Quiz Page](assets/images/readme/quiz-page.png)
@@ -142,6 +142,147 @@ Once you have answered all ten questions, and a possible tie-breaker, the site p
 
 - - -
 ## Testing & Bugs
+
+### HTML Validation
+
+We ran the code for all the pages through the [W3C HTML Validator](https://validator.w3.org/nu/).
+
+#### **Errors**
+
+There were some small initial errors occurring on multiple pages:
+
+<details><summary>Home Page</summary>
+<img src="assets/images/readme/testing_html_index_1.jpeg">
+</details>
+
+<details><summary>Quiz</summary>
+<img src="assets/images/readme/testing_html_quiz_1.jpeg">
+</details>
+
+<details><summary>404</summary>
+<img src="assets/images/readme/testing_html_404_1.jpeg">
+</details>
+
+<details><summary>Bio Pages</summary>
+<img src="assets/images/readme/testing_html_ada_1.jpeg">
+</details>
+
+These included:
+* A px unit included on the width of image elements - fixed by removing the px
+* `<a>` element as the child of `<li>` elements - fixed by changing the structure of the HTML in the nav bar
+* A missing `<li>` tag - fixed by adding it in
+* A missing `</script>` closing tag - fixed by adding it in
+* A missing `</div>` closing tag - fixed by adding it in
+* A duplicate ID used on quiz.html - fixed by renaming the ID on one of the divs
+* An empty `src` value on the quiz modal image (to be populated in the JavaScript based on results) - fixed by adding a placeholder image
+
+
+#### **HTML Validation Final Results**
+
+<details><summary>Home Page</summary>
+<img src="assets/images/readme/testing_html_index_final.jpeg">
+</details>
+
+<details><summary>Quiz</summary>
+<img src="assets/images/readme/testing_html_quiz_final.jpeg">
+</details>
+
+<details><summary>404</summary>
+<img src="assets/images/readme/testing_html_404_final.jpeg">
+</details>
+
+<details><summary>Bio Pages</summary>
+<img src="assets/images/readme/testing_html_ada_final.jpeg">
+<img src="assets/images/readme/testing_html_annie_final.jpeg">
+<img src="assets/images/readme/testing_html_hedy_final.jpeg">
+<img src="assets/images/readme/testing_html_mary_final.jpeg">
+<img src="assets/images/readme/testing_html_nikki_final.jpeg">
+<img src="assets/images/readme/testing_html_susan_final.jpeg">
+
+</details>
+
+- - -
+
+### CSS Validation
+
+We ran the CSS code through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input). The CSS passed with no errors
+
+#### **Errors**
+<details><summary>CSS Validation Results</summary>
+<img src="assets/images/readme/testing_css.jpeg">
+</details>
+
+
+- - -
+
+### JavaScript Validation
+
+We ran the JavaScript code through [JSHint](https://jshint.com/). 
+
+There were no errors but there were a number of warnings:
+
+<details><summary>JSHint Results</summary>
+<img src="assets/images/readme/testing_js.jpeg">
+</details>
+
+* Two undefined variables (these were declared in the questions and role model arrays in separate files) - no fix needed
+* Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. This error referred the readability of the JavaScript code - due to the time constraints of the Hackathon and the fact that the code was working correctly and it was just a readability issue rather than an error this code was left as it was.
+
+- - -
+
+### Performance
+
+We ran the site through Google Chrome Dev Tools' Lighthouse to check on its performance. All scores were 90 or above.
+
+<details><summary>Home Page</summary>
+<img src="assets/images/readme/testing_lh_index.jpeg">
+</details>
+
+<details><summary>Quiz</summary>
+<img src="assets/images/readme/testing_lh_quiz.jpeg">
+</details>
+
+<details><summary>404</summary>
+<img src="assets/images/readme/testing_lh_404.jpeg">
+</details>
+
+<details><summary>Bio Pages (all scored the same)</summary>
+<img src="assets/images/readme/testing_lh_ada.jpeg">
+</details>
+
+- - -
+
+## Bugs & Fixes
+
+During development and testing we encountered the following bugs:
+
+#### **1: Layout issues index.html**
+
+<details><summary>Screenshots</summary>
+
+<img src="assets/images/readme/bugs_1_desktop.jpg">
+<img src="assets/images/readme/bugs_1_mobile.gif">
+
+</details>
+
+In an early version of the layout for index.html there were multiple issues on index.html relating to the layout on desktop and mobile. These were all fixed by changing the HTML & CSS structure and resizing and optimising the images. The final results of the fix can be seen in the finished website images above.
+
+
+#### **2: Button hover effect on quiz**
+
+<details><summary>Screenshots</summary>
+
+<img src="assets/images/readme/bugs_2_incorrect.gif">
+
+*Hover Effects - functioning incorrectly*
+
+<img src="assets/images/readme/bugs_2_correct.gif">
+
+*Hover Effects - functioning correctly*
+
+</details>
+
+We discovered that in certain browsers/devices (in this case Windows & Chrome) the CSS hover effect on the game buttons and answers wasn't working correctly. We checked it on [responsivedesignchecker.com](https://responsivedesignchecker.com/) and the hover effect was working correctly there. Due to the time restrainst of the hackathon this bug remains.
 
 
 - - -
