@@ -297,7 +297,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 4. Click 'Save'
 5. A live link will be displayed when published successfully. 
 
-[The live link can be found here](https://phloreenm.github.io/team4-march-hackathon/quiz.html)
+[The live link can be found here](https://phloreenm.github.io/team4-march-hackathon)
 
 ### Forking the GitHub Repository
 
