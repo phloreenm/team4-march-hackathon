@@ -1,12 +1,13 @@
-# *Follow her Footsteps*
+![Mock-up](/assets/images/readme/mockup-banner.jpg)
 
 To celebrate International Women's Day, this month's Code Institute hackathon is paying tribute to Women in the Tech Industry. 
 
 Out of the main challenges faced by women in tech on a daily basis, we decided to focus our project around the theme of 'Lack of Representation'. It is true that women are often under-represented in technical roles, and more specifically, there are women who are completely unheard of by a large percentage of the population. These women have pushed the boundaries of science, gone where no coder or computer scientist had ever gone before, and paved the way for future generations with ground-breaking innovations that no-one has ever heard about. 
 
-We are celebrating the lives of amazing women who have changed the face of technology. Welcome to [Follow her Footsteps](https://phloreenm.github.io/team4-march-hackathon/)
+We are celebrating the lives of amazing women who have changed the face of technology. Welcome to [Follow her Footsteps!](https://phloreenm.github.io/team4-march-hackathon/)
 
-![Mock-up]()
+[Live wesbite](https://follow-her-foosteps.netlify.app/)
+
 
 ## Design, Layout & Structure
 
