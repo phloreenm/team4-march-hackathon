@@ -72,9 +72,12 @@ Using Google Fonts, we selected 'Merriweather Sans' for the Header font and 'Asa
 
 The navigation bar contains a bespoke logo for the site on the left, which is also a link back to the homepage from any point across the site. On the right, the user can access the role model quiz, or each of the six role model's information pages. 
 
+![Desktop View](assets/images/readme/navbar-d.png)
+
 This navbar reduces down into a hamburger menu for tablet and mobile devices.
 
-![Navbar](assets/images/readme/)
+![Navbar mobile view - open](assets/images/readme/navbar-m-c.png)
+![Navbar mobile view - open](assets/images/readme/navbar-m-o.png)
 
 ### Callout 
 
